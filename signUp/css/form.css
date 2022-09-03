@@ -1,0 +1,127 @@
+:root{
+  --primary: #F3BD00;
+  --secondary: #757575;
+  --light: #F3F6F8;
+  --dark: #0C2B4B;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Work Sans', sans-serif;
+    color: #384047;
+  }
+  
+  form {
+    max-width: 60vh;
+    margin: 10px auto;
+    padding: 3.5rem;
+    background: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    margin: 36px 0;
+    text-align: center;
+    color: #757575;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 8px;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    /* color: #8a97a0; */
+    /* box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset; */
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  button {
+    padding: 14px;
+    color: #FFF;
+    font-weight: 600;
+    background-color: var(--primary);
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%;
+    border: .5px solid var(--primary);
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  legend {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 1.5rem 0;
+  }
+  
+  label {
+    display: block;
+    font-size: .9em;
+    margin-top: 16px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .number {
+    background-color: var(--primary);
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+
+  .btn-daftar{
+    background-color: var(--primary);
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 480px;
+    }
+  
+  }
+  

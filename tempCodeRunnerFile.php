@@ -1,0 +1,2 @@
+<?php
+img/BADMINTON.png
