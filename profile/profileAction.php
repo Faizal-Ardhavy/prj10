@@ -10,5 +10,7 @@
 
     update_peserta($mail, $nama, $telpon, $instansi, $job, $birth, $_SESSION["id"]);
 
-    header("Location: ../index.php");
+    session_destroy();
+
+    header("Location: ../login/login.html");
 ?>
