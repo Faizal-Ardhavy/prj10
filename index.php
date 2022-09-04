@@ -317,7 +317,7 @@ require "function.php";
                             <p>Lomba Cepat Tepat Komputer adalah salah satu cabang lomba di bidang....</p>
                         </div>
                         <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="../../prj10/lomba/img/LCT.png" alt="">
+                            <img class="img-fluid" src="lomba/img/LCT.png" alt="">
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2" href="lomba/lct.php">Read More</a>
                             </div>
@@ -332,7 +332,7 @@ require "function.php";
                             <p>Competitive Programming Competition adalah lomba....</p>
                         </div>
                         <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="../../prj10/lomba/img/CPC.png" alt="">
+                            <img class="img-fluid" src="lomba/img/CPC.png" alt="">
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2" href="lomba/cpc.php">Read More</a>
                             </div>
@@ -347,7 +347,7 @@ require "function.php";
                             <p>Photography adalah salah satu cabang lomba di bidang non-akademik....</p>
                         </div>
                         <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="../../prj10/lomba/img/PG.png" alt="">
+                            <img class="img-fluid" src="lomba/img/PG.png" alt="">
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2" href="lomba/fotograpi.php">Read More</a>
                             </div>
@@ -363,7 +363,7 @@ require "function.php";
                             <p>Futsal adalah cabang olahraga di bidang olahraga dalam rangka....</p>
                         </div>
                         <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="../../prj10/lomba/img/FUTSAL.png" alt="">
+                            <img class="img-fluid" src="lomba/img/FUTSAL.png" alt="">
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2" href="lomba/futsal.php">Read More</a>
                             </div>
@@ -378,7 +378,7 @@ require "function.php";
                             <p>Lomba Cepat Tepat Komputer adalah salah satu cabang lomba di....</p>
                         </div>
                         <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="../../prj10/lomba/img/ML.png" alt="">
+                            <img class="img-fluid" src="lomba/img/ML.png" alt="">
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2" href="lomba/ml.php">Read More</a>
                             </div>
@@ -393,7 +393,7 @@ require "function.php";
                             <p>Badminton adalah cabang olahraga dalam rangka memperingati hari....</p>
                         </div>
                         <div class="position-relative">
-                            <img class="img-fluid" src="../../prj10/lomba/img/BADMINTON.png" alt="">
+                            <img class="img-fluid" src="lomba/img/BADMINTON.png" alt="">
                             <div class="courses-overlay">
                                 <a class="btn btn-outline-primary border-2" href="lomba/badminton.php">Read More</a>
                             </div>
