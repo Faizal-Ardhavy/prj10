@@ -11,6 +11,10 @@
         return mysqli_query(connect("prjx"), "UPDATE peserta SET email = '$mail', nama = '$nama', telpon = '$telp', instansi = '$instansi', pekerjaan = '$job', birth = '$birth' Where id = '$id'");
     }
 
+    function update_gambar($gambar, $id) {
+        return mysqli_query(connect("prjx"), "UPDATE peserta SET foto = '$gambar' Where id = '$id'");
+    }
+
     function login_check($mail, $pass){
         
         $query = mysqli_query(connect("prjx"), "SELECT * FROM peserta WHERE email = '$mail'");

@@ -36,22 +36,32 @@
     <body>
         <div class="row">
             <div class="col-md-12">
-                <form action="profileAction.php" method="post">
+                <form action="profileAction.php" method="post" enctype= "multipart/form-data">
                     <h1> Pendataan Peserta </h1>
                     <button type="submit">Konfirmasi</button>
                     <fieldset>
                         <legend><span class="number">1</span> Profil</legend>
+
+                        <?php 
+                            if($_SESSION["gambar"]!=null){
+                                 
+                        ?>
+                            <img src="../img/<?php echo $_SESSION["gambar"]; ?>">
+
+                        <?php
+                            }
+                        ?>
 
                         <label for="name">Username atau Email</label>
                         <?php 
                             if($_SESSION["username"]!=null){ 
                         
                         ?>
-                        <input type="email" id="username" name="user_name" value=<?= $_SESSION["username"] ?>>
+                        <input type="email" id="username" name="username" value=<?= $_SESSION["username"] ?>>
                         <?php
                             }else{
                         ?>
-                        <input type="email" id="username" name="user_name">
+                        <input type="email" id="username" name="username">
                         <?php
                             }
                         ?>
@@ -115,7 +125,7 @@
                             ?>
 
                         <label for="job">Pekerjaan</label>
-                            <?php 
+                        <?php 
                             if($_SESSION["pekerjaan"]!=null){ 
                         
                         ?>
@@ -143,10 +153,10 @@
                             </optgroup>
                         <?php
                             }
-                            ?>
-<!-- 
+                        ?>
+
                             <input required type="file" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
-                            <label for="gambar">Upload Foto Formal (Max 2MB)</label> -->
+                            <label for="gambar">Upload Foto Formal (Max 2MB)</label>
                     </fieldset>
                     <!-- <fieldset>
                         <legend><span class="number">2</span> Profil Anggota</legend>

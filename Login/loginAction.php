@@ -10,6 +10,7 @@
         $_SESSION["instansi"]=$data["instansi"];
         $_SESSION["birth"]=$data["birth"];
         $_SESSION["pekerjaan"]=$data["pekerjaan"];
+        $_SESSION["gambar"]=$data["foto"];
         $_SESSION["id"] = $data["id"];
         $isi = $_POST["password"];
         $_SESSION["login"]=login_check($username, $isi);
