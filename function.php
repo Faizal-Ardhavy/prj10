@@ -26,4 +26,18 @@
             return false;
         }
     }
+
+    function insert_pendaftaran($nama, $instansi, $mail){
+        mysqli_query(connect("prjx"), "INSERT INTO `pendaftaran`(`divisi`, `sekolah`, `email`, `nama_tim`) VALUES ('CPC','$instansi','$mail','$nama')");
+        return mysqli_insert_id(connect("prjx"));
+    }
+
+    // function get_last_pendaftaran(){
+    //     return
+    // }
+
+    function insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran){
+        return mysqli_query(connect("prjx"), "INSERT INTO `anggota`(`nama`, `no_hp`, `id_pendaftaran`) VALUES ($nama','$telpon','$id_pendaftaran')");
+    }
+
 ?>

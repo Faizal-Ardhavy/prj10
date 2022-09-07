@@ -1,5 +1,8 @@
 <?php
     require "../function.php";
+    $id = $_SESSION["id"];
+    $queri = mysqli_query(connect("prjx"), "SELECT * FROM peserta WHERE id = '$id'");
+    $data = mysqli_fetch_assoc($queri);
     if(!isset($_SESSION["login"])||!$_SESSION["login"]){
         header("Location: ../login/login.html");
     }
@@ -36,21 +39,85 @@
     <body>
         <div class="row">
             <div class="col-md-12">
-                <form action="index.html" method="post">
+                <form action="formActionCPC.php" method="post" enctype= "multipart/form-data">
                     <h1> Form Pendaftaran </h1>
 
                     <fieldset>
-                        <legend><span class="number">1</span> Profil Ketua</legend>
+                        <legend><span class="number">1</span> Profil</legend>
+                        <label for="name">Email</label>
+                        <?php 
+                            if($data["email"]!=null){ 
+                        
+                        ?>
+                        <input type="email" id="username" name="username" value=<?= $data["email"] ?>>
+                        <?php
+                            }else{
+                        ?>
+                        <input type="email" id="username" name="username">
+                        <?php
+                            }
+                        ?>
 
-                        <label for="name">Nama Ketua</label>
-                        <input type="text" id="name" name="user_name">
+                        <label for="name">Nama Lengkap</label>
+                        <?php 
+                            if($data["nama"]!=null){ 
+                        
+                        ?>
+                        <input type="text" id="name" name="name" value="<?= $data["nama"]?>">
+                        <?php
+                            }else{
+                        ?>
+                        <input type="text" id="name" name="name">
+                        <?php
+                            }
+                        ?>
 
-                        <label for="name">Kontak Ketua</label>
-                        <input type="number" id="contact" name="contact">
+                        <label for="name">No.Telpon</label>
+                        <?php 
+                            if($data["telpon"]!=null){ 
+                        
+                        ?>
+                        <input type="number" id="telp" name="telp" value=<?= $data["telpon"]?>>
+                        <?php
+                            }else{
+                        ?>
+                        <input type="text" id="telp" name="telp">
+                        <?php
+                            }
+                        ?>
+
+                        <label for="school">Instansi</label>
+                        <?php 
+                            if($data["instansi"]!=null){ 
+                        ?>
+                        <input type="text" id="school" name="school" value="<?= $data["instansi"]?>">
+                        <?php
+                        }else{
+                        ?>
+                        <input type="text" id="school" name="school">
+
+                        <?php
+                            }
+                        ?>
+                        <label for="birth">Tanggal lahir</label>
+                        <?php 
+                            if($data["birth"]!=null){ 
+                        
+                        ?>
+                        <input type="date" id="birth" name="birth" value="<?=$data["birth"]?>">
+                        <?php
+                            }else{
+                        ?>
+                        <input type="date" id="birth" name="birth">                        
+                        <?php
+                            }
+                        ?>
+
+
 
                     </fieldset>
                     <fieldset>
-                        <legend><span class="number">2</span> Profil Anggota</legend>
+                        <!-- <legend><span class="number">2</span> Profil Anggota</legend>
 
                         <label for="name_member_1">Nama Anggota 1</label>
                         <input type="text" id="name_member_1" name="name_member_1">
@@ -61,7 +128,7 @@
                         <legend><span class="number">4</span> Profil Tim</legend>
 
                         <label for="school">Asal Sekolah</label>
-                        <input type="text" id="school" name="school">
+                        <input type="text" id="school" name="school"> -->
                         
 
                         <!-- <label for="job">Job Role:</label>

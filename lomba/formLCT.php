@@ -39,23 +39,12 @@
     <body>
         <div class="row">
             <div class="col-md-12">
-                <form action="profileAction.php" method="post" enctype= "multipart/form-data">
-                    <h1> Pendataan Peserta </h1>
-                    <button type="submit">Konfirmasi</button>
+                <form action="formActionLCT.php" method="post" enctype= "multipart/form-data">
+                    <h1> Form Pendaftaran Tim</h1>
+
                     <fieldset>
-                        <legend><span class="number">1</span> Profil</legend>
-
-                        <?php 
-                            if($data["foto"]!=null){
-                                 
-                        ?>
-                            <img src="../img/<?php echo $data["foto"]; ?>">
-
-                        <?php
-                            }
-                        ?>
-
-                        <label for="name">Username atau Email</label>
+                        <legend><span class="number">1</span> Profil Ketua</legend>
+                        <label for="name">Email</label>
                         <?php 
                             if($data["email"]!=null){ 
                         
@@ -97,6 +86,19 @@
                             }
                         ?>
 
+                        <label for="school">Instansi</label>
+                        <?php 
+                            if($data["instansi"]!=null){ 
+                        ?>
+                        <input type="text" id="school" name="school" value="<?= $data["instansi"]?>">
+                        <?php
+                        }else{
+                        ?>
+                        <input type="text" id="school" name="school">
+
+                        <?php
+                            }
+                        ?>
                         <label for="birth">Tanggal lahir</label>
                         <?php 
                             if($data["birth"]!=null){ 
@@ -111,59 +113,45 @@
                             }
                         ?>
 
+
+                        <legend><span class="number">2</span> Profil Anggota 2</legend>
+                        <label for="name">Email</label>
+                        <input type="email" id="username2" name="username2">
+
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name2" name="nam2">
+
+                        <label for="name">No.Telpon</label>
+                        <input type="text" id="telp2" name="telp2">
+
+
                         <label for="school">Instansi</label>
-                        <?php 
-                            if($data["instansi"]!=null){ 
+                        <input type="text" id="school2" name="school2">
+
+                        <label for="birth">Tanggal lahir</label>
+                        <input type="date" id="birth2" name="birth2">                        
+
+
+                    <legend><span class="number">3</span> Profil Anggota 3</legend>
+                    <label for="name">Email</label>
+                        <input type="email" id="username3" name="username3">
+
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name3" name="name3">
+
+                        <label for="name">No.Telpon</label>
+                        <input type="text" id="telp3" name="telp3">
+
+
+                        <label for="school">Instansi</label>
+                        <input type="text" id="school3" name="school3">
+
+                        <label for="birth">Tanggal lahir</label>
+                        <input type="date" id="birth3" name="birth3"> 
                         
-                        ?>
-                        <input type="text" id="school" name="school" value="<?= $data["instansi"]?>">
-
-                        <?php
-                            }else{
-                        ?>
-                        <input type="text" id="school" name="school">
-
-                        <?php
-                            }
-                            ?>
-
-                        <label for="job">Pekerjaan</label>
-                        <?php 
-                            if($data["pekerjaan"]!=null){ 
-                        
-                        ?>
-                        <select id="job" name="job">
-                            <option value="<?= $data["pekerjaan"] ?>" selected disabled hidden>
-                            <?= $data["pekerjaan"] ?>
-                            </option>
-                            <option value="Siswa">Siswa</option>
-                                <option value="Mahasiswa">Mahasiswa</option>
-                                <option value="pns">PNS</option>
-                                <option value="Swasta">Swasta</option>
-                                <option value="Wirausaha">Wirausaha</option>
-                                <option value="lainnya">lainnya</option>
-                        </select>
-                        <?php
-                            }else{
-                        ?>
-                        <select id="job" name="job">
-                            <optgroup label="Siswa">
-                                <option value="Siswa">Siswa</option>
-                                <option value="Mahasiswa">Mahasiswa</option>
-                                <option value="pns">PNS</option>
-                                <option value="Swasta">Swasta</option>
-                                <option value="Wirausaha">Wirausaha</option>
-                                <option value="lainnya">lainnya</option>
-                            </optgroup>
-                        <?php
-                            }
-                        ?>
-
-                            <input required type="file" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
-                            <label for="gambar">Upload Foto Formal (Max 2MB)</label>
                     </fieldset>
-                    <!-- <fieldset>
-                        <legend><span class="number">2</span> Profil Anggota</legend>
+                    <fieldset>
+                        <!-- <legend><span class="number">2</span> Profil Anggota</legend>
 
                         <label for="name_member_1">Nama Anggota 1</label>
                         <input type="text" id="name_member_1" name="name_member_1">
@@ -175,8 +163,9 @@
 
                         <label for="school">Asal Sekolah</label>
                         <input type="text" id="school" name="school"> -->
+                        
 
-                    <!-- <label for="job">Job Role:</label>
+                        <!-- <label for="job">Job Role:</label>
                         <select id="job" name="user_job">
                             <optgroup label="Web">
                                 <option value="frontend_developer">Front-End Developer</option>
@@ -197,7 +186,7 @@
                             </optgroup>
                         </select> -->
 
-                    <!-- <label>Interests:</label>
+                        <!-- <label>Interests:</label>
                         <input type="checkbox" id="development" value="interest_development" name="user_interest"><label
                             class="light" for="development">Development</label><br>
                         <input type="checkbox" id="design" value="interest_design" name="user_interest"><label
@@ -205,9 +194,9 @@
                         <input type="checkbox" id="business" value="interest_business" name="user_interest"><label
                             class="light" for="business">Business</label> -->
 
-                    <!-- </fieldset> -->
+                    </fieldset>
 
-
+                    <button type="submit">Sign Up</button>
 
                 </form>
             </div>

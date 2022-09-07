@@ -18,5 +18,5 @@
 
     update_peserta($mail, $nama, $telpon, $instansi, $job, $birth, $_SESSION["id"]);
 
-    header("Location: ../index.php");
+    header("Location: profile.php");
 ?>

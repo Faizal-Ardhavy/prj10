@@ -127,7 +127,7 @@
                         </div>
                         <div class="row g-4">
                             <div class="col-sm-6">
-                                <a class="btn btn-primary py-3 px-5" href="https://bit.ly/pendaftaranPRJXHT">Daftar</a>
+                                <a class="btn btn-primary py-3 px-5" href="formCPC.php">Daftar</a>
                             </div>
                             <div class="col-sm-6">
                                 <a class="d-inline-flex align-items-center btn btn-outline-primary border-2 p-2" href="#">
