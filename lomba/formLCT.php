@@ -104,7 +104,7 @@
                         <legend><span class="number">2</span> Profil Anggota 2</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name2" name="nam2">
+                        <input type="text" id="name2" name="name2">
 
                         <label for="name">No.Telpon</label>
                         <input type="text" id="telp2" name="telp2">
