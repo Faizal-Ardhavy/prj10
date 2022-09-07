@@ -44,19 +44,6 @@
 
                     <fieldset>
                         <legend><span class="number">1</span> Profil Ketua</legend>
-                        <label for="name">Email</label>
-                        <?php 
-                            if($data["email"]!=null){ 
-                        
-                        ?>
-                        <input type="email" id="username" name="username" value=<?= $data["email"] ?>>
-                        <?php
-                            }else{
-                        ?>
-                        <input type="email" id="username" name="username">
-                        <?php
-                            }
-                        ?>
 
                         <label for="name">Nama Lengkap</label>
                         <?php 
@@ -115,8 +102,6 @@
 
 
                         <legend><span class="number">2</span> Profil Anggota 2</legend>
-                        <label for="name">Email</label>
-                        <input type="email" id="username2" name="username2">
 
                         <label for="name">Nama Lengkap</label>
                         <input type="text" id="name2" name="nam2">
@@ -132,22 +117,38 @@
                         <input type="date" id="birth2" name="birth2">                        
 
 
-                    <legend><span class="number">3</span> Profil Anggota 3</legend>
-                    <label for="name">Email</label>
-                        <input type="email" id="username3" name="username3">
+                        <legend><span class="number">3</span> Profil Anggota 3</legend>
 
-                        <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name3" name="name3">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name3" name="name3">
 
-                        <label for="name">No.Telpon</label>
-                        <input type="text" id="telp3" name="telp3">
+                            <label for="name">No.Telpon</label>
+                            <input type="text" id="telp3" name="telp3">
 
 
-                        <label for="school">Instansi</label>
-                        <input type="text" id="school3" name="school3">
+                            <label for="school">Instansi</label>
+                            <input type="text" id="school3" name="school3">
 
-                        <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth3" name="birth3"> 
+                            <label for="birth">Tanggal lahir</label>
+                            <input type="date" id="birth3" name="birth3">
+
+                        <legend><span class="number">4</span> Profil Tim</legend>
+                            <label for="name">Email</label>
+                            <?php 
+                                if($data["email"]!=null){ 
+                            
+                            ?>
+                            <input type="email" id="username" name="username" value=<?= $data["email"] ?>>
+                            <?php
+                                }else{
+                            ?>
+                            <input type="email" id="username" name="username">
+                            <?php
+                                }
+                            ?>
+
+                            <label for="name">Nama Tim</label>
+                            <input type="text" id="namaTim" name="namaTim">
                         
                     </fieldset>
                     <fieldset>
