@@ -27,9 +27,11 @@
         }
     }
 
-    function insert_pendaftaran($nama, $instansi, $mail){
-        mysqli_query(connect("prjx"), "INSERT INTO `pendaftaran`(`divisi`, `sekolah`, `email`, `nama_tim`) VALUES ('CPC','$instansi','$mail','$nama')");
-        return mysqli_insert_id(connect("prjx"));
+    function insert_pendaftaran($nama, $instansi, $mail, $div){
+        $conn = mysqli_connect("localhost", "root", "", "prjx");
+        $q = "INSERT INTO `pendaftaran`(`divisi`, `sekolah`, `email`, `nama_tim`) VALUES ('$div','$instansi','$mail','$nama')";
+        mysqli_query($conn, $q);
+        return mysqli_insert_id($conn);
     }
 
     // function get_last_pendaftaran(){
@@ -37,7 +39,7 @@
     // }
 
     function insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran){
-        return mysqli_query(connect("prjx"), "INSERT INTO `anggota`(`nama`, `no_hp`, `id_pendaftaran`) VALUES ($nama','$telpon','$id_pendaftaran')");
+        return mysqli_query(connect("prjx"), "INSERT INTO `anggota`(`nama`, `no_hp`, `id_pendaftaran`) VALUES ('$nama','$telpon','$id_pendaftaran')");
     }
 
 ?>
