@@ -8,7 +8,7 @@
     $instansi = $_POST["school"];
     $birth = $_POST["birth"];
 
-    $nama2 = $_POST["name2"];
+    $nama2 = $_POST["nam2"];
     $telpon2 = $_POST["telp2"];
     $instansi2 = $_POST["school2"];
     $birth2 = $_POST["birth2"];
@@ -21,6 +21,8 @@
     
     $id_pendaftaran =insert_pendaftaran($nama, $instansi, $mail, 'LCT');
     insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran);
+    insert_anggota($nama2, $mail, $telpon2, $birth2, $id_pendaftaran);
+    insert_anggota($nama3, $mail, $telpon2, $birth2, $id_pendaftaran);
 
     // header("Location: profile.php");
 ?>
