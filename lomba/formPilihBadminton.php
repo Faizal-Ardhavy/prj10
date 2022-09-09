@@ -40,8 +40,13 @@
     <body>
         <div class="row">
             <div class="col-md-12">
-            <button href = "formCPC.php" type="submit">Ganda Campuran</button>
-            <button href = "formCPC.php" type="submit">Tunggal</button>
+                <form>
+                    <h1> Pilih Katagori </h1>
+
+                    <button onclick="location.href='formBTunggal.php'" type="button">Tunggal</button>
+                    <button onclick="location.href='formBGanda.php'" type="button">Ganda Campuran</button>
+
+                </form>
             </div>
         </div>
 
