@@ -49,11 +49,12 @@
                             if($data["foto"]!=null){
                                  
                         ?>
-                            <img src="../img/<?php echo $data["foto"]; ?>">
+                            <img src="../img/<?php echo $data["foto"]; ?>" width="150px">
 
                         <?php
                             }
                         ?>
+
 
                         <label for="name">Username atau Email</label>
                         <?php 
@@ -159,7 +160,7 @@
                             }
                         ?>
 
-                            <input required type="file" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
+                            <input type="file" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
                             <label for="gambar">Upload Foto Formal (Max 2MB)</label>
                     </fieldset>
                     <!-- <fieldset>

@@ -10,7 +10,12 @@
 
     $filename = $_FILES["gambar"]["name"];
     $tempname = $_FILES["gambar"]["tmp_name"];
-    $folder = "../img/" . $filename;    
+    $folder = "../img/" . $filename;
+    if($filename==null){
+        $folder = null;
+    }else{
+        $folder = "../img/" . $filename;
+    }    
     // // Get all the submitted data from the form
     update_gambar($folder, $_SESSION["id"]); 
     // Now let's move the uploaded image into the folder: image
