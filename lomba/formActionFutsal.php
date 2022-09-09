@@ -54,7 +54,7 @@
     $birth10 = $_POST["birth10"];
 
     
-    $id_pendaftaran =insert_pendaftaran($nama, $instansi, $mail, 'ML');
+    $id_pendaftaran =insert_pendaftaran($nama, $instansi, $mail, 'Futsal');
     insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran,'NULL');
     insert_anggota($nama2, $mail, $telpon2, $birth2, $id_pendaftaran,'NULL');
     insert_anggota($nama3, $mail, $telpon3, $birth3, $id_pendaftaran,'NULL');
