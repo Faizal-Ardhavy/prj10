@@ -375,7 +375,7 @@ require "function.php";
                         <div class="text-center p-4 pt-0">
                             <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">Umum</div>
                             <h5 class="mb-3">Mobile Legend</h5>
-                            <p>Lomba Cepat Tepat Komputer adalah salah satu cabang lomba di....</p>
+                            <p>Mobile Legends adalah cabang E-Sports dalam rangka....</p>
                         </div>
                         <div class="position-relative mt-auto">
                             <img class="img-fluid" src="lomba/img/ML.png" alt="">

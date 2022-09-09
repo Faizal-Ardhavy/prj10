@@ -38,8 +38,8 @@
     //     return
     // }
 
-    function insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran){
-        return mysqli_query(connect("prjx"), "INSERT INTO `anggota`(`nama`, `no_hp`, `id_pendaftaran`) VALUES ('$nama','$telpon','$id_pendaftaran')");
+    function insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran,$karya){
+        return mysqli_query(connect("prjx"), "INSERT INTO `anggota`(`nama`, `no_hp`, `id_pendaftaran`,`karya`) VALUES ('$nama','$telpon','$id_pendaftaran','$karya')");
     }
 
 ?>

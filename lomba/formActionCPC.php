@@ -18,7 +18,7 @@
 
     
     $id_pendaftaran =insert_pendaftaran($nama, $instansi, $mail, 'CPC');
-    insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran);
+    insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran,'NULL');
 
-    // header("Location: profile.php");
+    header("Location: ../dashboard/dashboard.php");
 ?>
