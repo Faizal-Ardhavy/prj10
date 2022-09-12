@@ -5,6 +5,7 @@
     $telpon = $_POST["telp"];
     $instansi = $_POST["school"];
     $birth = $_POST["birth"];
+    $id = $_SESSION["id"];
 
     // $filename = $_FILES["gambar"]["name"];
     // $tempname = $_FILES["gambar"]["tmp_name"];
@@ -17,7 +18,7 @@
     // update_peserta($mail, $nama, $telpon, $instansi, $job, $birth, $_SESSION["id"]);
 
     
-    $id_pendaftaran =insert_pendaftaran($nama, $instansi, $mail, 'CPC');
+    $id_pendaftaran =insert_pendaftaran($nama, $instansi, $mail, 'CPC',$id);
     insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran,'NULL');
 
     header("Location: ../dashboard/dashboard.php");

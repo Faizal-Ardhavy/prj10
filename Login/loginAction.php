@@ -15,6 +15,6 @@
         exit;
     }else{
         echo '<script>alert("Kombinasi Username atau Password Anda Salah");window.history.go(-1);</script>';
-        echo "<meta http-equiv=\"refresh\" content=\"1.5;url=login.html\"/>";
+        echo "<meta http-equiv=\"refresh\" content=\";url=login.html\"/>";
     }
 ?>

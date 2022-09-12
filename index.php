@@ -103,7 +103,7 @@ require "function.php";
             <?php
             if(isset($_SESSION["login"])&&$_SESSION["login"]){
             ?>
-                <a href="dashboard/dashboard.php" class="nav-item nav-link">Dashboard</a>
+                <a href="dashboard/lomba.php" class="nav-item nav-link">Dashboard</a>
             
             <?php
             }

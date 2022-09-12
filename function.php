@@ -27,9 +27,9 @@
         }
     }
 
-    function insert_pendaftaran($nama, $instansi, $mail, $div){
+    function insert_pendaftaran($nama, $instansi, $mail, $div, $id_pendaftaran){
         $conn = mysqli_connect("localhost", "root", "", "prjx");
-        $q = "INSERT INTO `pendaftaran`(`divisi`, `sekolah`, `email`, `nama_tim`) VALUES ('$div','$instansi','$mail','$nama')";
+        $q = "INSERT INTO `pendaftaran`(`divisi`, `sekolah`, `email`, `nama_tim`,`id_peserta`) VALUES ('$div','$instansi','$mail','$nama','$id_pendaftaran')";
         mysqli_query($conn, $q);
         return mysqli_insert_id($conn);
     }

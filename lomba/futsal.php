@@ -157,7 +157,7 @@
                 <div class="col-md-6 text-center text-md-end contact-cpc">
                     <ul>
                         Contact Person:
-                        <li>Naufal Zafran (+62896-2702-6885)</li>
+                        <li>Mutiara (+62 895-1011-9434)</li>
                         <li>Wirda Diana (+62895-2023-3288)</li>
                     </ul>
                 </div>
