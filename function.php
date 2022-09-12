@@ -19,12 +19,18 @@
         
         $query = mysqli_query(connect("prjx"), "SELECT * FROM peserta WHERE email = '$mail'");
         $data = mysqli_fetch_assoc($query);
-
-        if(password_verify($pass, $data['password'])){
-            return true;
-        }else{
+        if($data != null){
+            if(password_verify($pass, $data['password'])==true){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        else{
             return false;
         }
+
+
     }
 
     function insert_pendaftaran($nama, $instansi, $mail, $div, $id_pendaftaran){

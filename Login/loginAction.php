@@ -7,11 +7,10 @@
         $data = mysqli_fetch_assoc($queri);
         $isi = $_POST["password"];
         $_SESSION["login"]=login_check($username, $isi);
-        $_SESSION["id"] = $data["id"];
-
 
     }
     if(isset($_SESSION["login"])&&$_SESSION["login"]){
+        $_SESSION["id"] = $data["id"];
         header("Location: ../index.php");
         exit;
     }else{
