@@ -5,9 +5,10 @@
         $_SESSION["username"] = $username;
         $queri = mysqli_query(connect("prjx"), "SELECT * FROM peserta WHERE email = '$username'");
         $data = mysqli_fetch_assoc($queri);
-        $_SESSION["id"] = $data["id"];
         $isi = $_POST["password"];
         $_SESSION["login"]=login_check($username, $isi);
+        $_SESSION["id"] = $data["id"];
+
 
     }
     if(isset($_SESSION["login"])&&$_SESSION["login"]){
