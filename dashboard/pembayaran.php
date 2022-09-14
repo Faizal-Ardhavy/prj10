@@ -1,3 +1,14 @@
+<?php
+    require "../function.php";
+    $id = $_SESSION["id"];
+    $queri = mysqli_query(connect("prjx"), "SELECT * FROM pendaftaran WHERE id_peserta = '$id'");
+    $queri1 = mysqli_query(connect("prjx"), "SELECT * FROM peserta WHERE id = '$id'");
+    $datas = mysqli_fetch_assoc($queri1);
+    if(!isset($_SESSION["login"])||!$_SESSION["login"]){
+        header("Location: ../login/login.html");
+    }
+?>
+
 <!DOCTYPE html>
 <html :class="{ 'theme-dark': dark }" x-data="data()" lang="en">
   <head>
@@ -90,7 +101,7 @@
               </a>
             </li>
             <li class="relative px-6 py-3">
-            <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
+            <span class="absolute inset-y-0 left-0 w-1 bg-yellow-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
               <a
                 class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 href="pembayaran.php"
@@ -151,7 +162,7 @@
           <ul class="mt-6">
             <li class="relative px-6 py-3">
               <span
-                class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                class="absolute inset-y-0 left-0 w-1 bg-yellow-600 rounded-tr-lg rounded-br-lg"
                 aria-hidden="true"
               ></span>
               <a
@@ -205,11 +216,11 @@
       <div class="flex flex-col flex-1 w-full">
         <header class="z-10 py-4 bg-white shadow-md dark:bg-gray-800">
           <div
-            class="container flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300"
+            class="container flex items-center justify-between h-full px-6 mx-auto text-yellow-600 dark:text-yellow-300"
           >
             <!-- Mobile hamburger -->
             <button
-              class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-purple"
+              class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-yellow"
               @click="toggleSideMenu"
               aria-label="Menu"
             >
@@ -230,7 +241,7 @@
               <!-- Theme toggler -->
               <li class="flex">
                 <button
-                  class="rounded-md focus:outline-none focus:shadow-outline-purple"
+                  class="rounded-md focus:outline-none focus:shadow-outline-yellow"
                   @click="toggleTheme"
                   aria-label="Toggle color mode"
                 >
@@ -265,7 +276,7 @@
                 <!-- Profile menu -->
               <li class="relative">
                 <button
-                  class="align-middle rounded-full focus:shadow-outline-purple focus:outline-none"
+                  class="align-middle rounded-full focus:shadow-outline-yellow focus:outline-none"
                   @click="toggleProfileMenu"
                   @keydown.escape="closeProfileMenu"
                   aria-label="Account"
@@ -274,7 +285,7 @@
                 <h1>USER</h1>
                   <img
                     class="object-cover w-8 h-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1502378735452-bc7d86632805?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=aa3a807e1bbdfd4364d1f449eaa96d82"
+                    src="<?=$datas["foto"]?>"
                     alt=""
                     aria-hidden="true"
                   />

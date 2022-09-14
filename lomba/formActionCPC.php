@@ -18,7 +18,7 @@
     // update_peserta($mail, $nama, $telpon, $instansi, $job, $birth, $_SESSION["id"]);
 
     
-    $id_pendaftaran =insert_pendaftaran($nama, $instansi, $mail, 'CPC',$id);
+    $id_pendaftaran = insert_pendaftaran($nama, $instansi, $mail, 'CPC',$id);
     insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran,'NULL');
 
     header("Location: ../dashboard/dashboard.php");

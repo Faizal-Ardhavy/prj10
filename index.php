@@ -20,7 +20,7 @@ require "function.php";
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -100,35 +100,35 @@ require "function.php";
                     </div>
                 </div>
                 <a href="404.php" class="nav-item nav-link">Pengumuman Lomba</a>
-            <?php
-            if(isset($_SESSION["login"])&&$_SESSION["login"]){
-            ?>
-                <a href="dashboard/lomba.php" class="nav-item nav-link">Dashboard</a>
-            
-            <?php
-            }
-            ?>
-            <?php
-            if(isset($_SESSION["login"])&&$_SESSION["login"]){
-            ?>
-            <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><?= $_SESSION["username"] ?></a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="profile/profile.php" class="dropdown-item">Data Diri</a>
-                        <a href="logOut.php"class="dropdown-item">Log Out</a>
-                    </div>
-                </div>
-            <?php
+                <?php
+                if (isset($_SESSION["login"]) && $_SESSION["login"]) {
+                ?>
+                    <a href="dashboard/lomba.php" class="nav-item nav-link">Dashboard</a>
+
+                <?php
                 }
-            ?>
+                ?>
+                <?php
+                if (isset($_SESSION["login"]) && $_SESSION["login"]) {
+                ?>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><?= $_SESSION["username"] ?></a>
+                        <div class="dropdown-menu bg-light m-0">
+                            <a href="profile/profile.php" class="dropdown-item">Data Diri</a>
+                            <a href="logOut.php" class="dropdown-item">Log Out</a>
+                        </div>
+                    </div>
+                <?php
+                }
+                ?>
 
             </div>
             <?php
-                if(!isset($_SESSION["login"])||!$_SESSION["login"]){
+            if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
             ?>
-            <a href="login/login.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Log In<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="login/login.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Log In<i class="fa fa-arrow-right ms-3"></i></a>
             <?php
-                }
+            }
             ?>
         </div>
     </nav>
@@ -147,10 +147,10 @@ require "function.php";
                                 <div class="col-lg-7">
                                     <h1 class="display-2 text-light mb-5 animated slideInDown">Meningkatkan Potensi Milenial Cerdas menuju Era Society 5.0</h1>
                                     <?php
-                                    if(!isset($_SESSION["login"])||!$_SESSION["login"]){
+                                    if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                                     ?>
-                                    <a href="login/login.html" class="btn btn-primary py-sm-3 px-sm-5">Log in</a>
-                                    <a href="signUp/signUp.php" class="btn btn-light py-sm-3 px-sm-5 ms-3">Sign Up</a>
+                                        <a href="login/login.html" class="btn btn-primary py-sm-3 px-sm-5">Log in</a>
+                                        <a href="signUp/signUp.php" class="btn btn-light py-sm-3 px-sm-5 ms-3">Sign Up</a>
                                     <?php
                                     }
                                     ?>
@@ -167,10 +167,10 @@ require "function.php";
                                 <div class="col-lg-7">
                                     <h1 class="display-2 text-light mb-5 animated slideInDown">Meningkatkan Potensi Milenial Cerdas menuju Era Society 5.0</h1>
                                     <?php
-                                    if(!isset($_SESSION["login"])||!$_SESSION["login"]){
+                                    if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                                     ?>
-                                    <a href="login/login.html" class="btn btn-primary py-sm-3 px-sm-5">Log in</a>
-                                    <a href="signUp/signUp.php" class="btn btn-light py-sm-3 px-sm-5 ms-3">Sign up</a>
+                                        <a href="login/login.html" class="btn btn-primary py-sm-3 px-sm-5">Log in</a>
+                                        <a href="signUp/signUp.php" class="btn btn-light py-sm-3 px-sm-5 ms-3">Sign up</a>
                                     <?php
                                     }
                                     ?>
@@ -180,13 +180,11 @@ require "function.php";
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -251,7 +249,7 @@ require "function.php";
                     <h6 class="text-primary text-uppercase mb-2">Apa Itu PRJ X HT?</h6>
                     <h1 class="display-6 mb-4">Pekan Raya Jurusan Ilmu Komputer</h1>
                     <p class="mb-3">Dalam rangka Dies Natalis Jurusan, kami ingin mengadakan serangkaian acara besar yang bersifat pengembangan keilmuan sebagai refleksi dari Visi dan Misi FMIPA yang menuntut kami untuk selalu menjujung tinggi tentang penelitian. Dies Natalis Jurusan Ilmu Komputer ini juga merupakan momentum untuk memberikan kesempatan kepada para pelajar dan umum di luar sana khususnya. </p>
-                    <p class="mb-5"> Maka melalui acara ini kami berupaya untuk mengoptimalkan kehidupan saintis dengan kreatifitas yang kaya akan imajinasi dalam memberikan terobosan – terobosan baru bagi perkembangan ilmu pengetahuan dan teknologi. Acara ini juga sebagai ajang motivasi bagi kami untuk menjadi lebih baik, dengan adanya tekad untuk maju dan terus memberikan manfaat bagi civitas akademik Jurusan Ilmu Komputer khususnya dan civitas FMIPA Universitas Lampung. </p> 
+                    <p class="mb-5"> Maka melalui acara ini kami berupaya untuk mengoptimalkan kehidupan saintis dengan kreatifitas yang kaya akan imajinasi dalam memberikan terobosan – terobosan baru bagi perkembangan ilmu pengetahuan dan teknologi. Acara ini juga sebagai ajang motivasi bagi kami untuk menjadi lebih baik, dengan adanya tekad untuk maju dan terus memberikan manfaat bagi civitas akademik Jurusan Ilmu Komputer khususnya dan civitas FMIPA Universitas Lampung. </p>
                     <div class="row gy-5 gx-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="d-flex align-items-center mb-3">
@@ -355,51 +353,51 @@ require "function.php";
                     </div>
                 </div>
                 <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                        <div class="text-center p-4 pt-0">
-                            <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">SMA dan sederajat</div>
-                            <h5 class="mb-3">Futsal</h5>
-                            <p>Futsal adalah cabang olahraga di bidang olahraga dalam rangka....</p>
-                        </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="lomba/img/FUTSAL.png" alt="">
-                            <div class="courses-overlay">
-                                <a class="btn btn-outline-primary border-2" href="lomba/futsal.php">Read More</a>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
+                            <div class="text-center p-4 pt-0">
+                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">SMA dan sederajat</div>
+                                <h5 class="mb-3">Futsal</h5>
+                                <p>Futsal adalah cabang olahraga di bidang olahraga dalam rangka....</p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img class="img-fluid" src="lomba/img/FUTSAL.png" alt="">
+                                <div class="courses-overlay">
+                                    <a class="btn btn-outline-primary border-2" href="lomba/futsal.php">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                        <div class="text-center p-4 pt-0">
-                            <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">Umum</div>
-                            <h5 class="mb-3">Mobile Legend</h5>
-                            <p>Mobile Legends adalah cabang E-Sports dalam rangka....</p>
-                        </div>
-                        <div class="position-relative mt-auto">
-                            <img class="img-fluid" src="lomba/img/ML.png" alt="">
-                            <div class="courses-overlay">
-                                <a class="btn btn-outline-primary border-2" href="lomba/ml.php">Read More</a>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
+                            <div class="text-center p-4 pt-0">
+                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">Umum</div>
+                                <h5 class="mb-3">Mobile Legend</h5>
+                                <p>Mobile Legends adalah cabang E-Sports dalam rangka....</p>
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img class="img-fluid" src="lomba/img/ML.png" alt="">
+                                <div class="courses-overlay">
+                                    <a class="btn btn-outline-primary border-2" href="lomba/ml.php">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
-                        <div class="text-center p-4 pt-0">
-                            <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">SMA dan sederajat</div>
-                            <h5 class="mb-3">Badminton</h5>
-                            <p>Badminton adalah cabang olahraga dalam rangka memperingati hari....</p>
-                        </div>
-                        <div class="position-relative">
-                            <img class="img-fluid" src="lomba/img/BADMINTON.png" alt="">
-                            <div class="courses-overlay">
-                                <a class="btn btn-outline-primary border-2" href="lomba/badminton.php">Read More</a>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
+                            <div class="text-center p-4 pt-0">
+                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">SMA dan sederajat</div>
+                                <h5 class="mb-3">Badminton</h5>
+                                <p>Badminton adalah cabang olahraga dalam rangka memperingati hari....</p>
+                            </div>
+                            <div class="position-relative">
+                                <img class="img-fluid" src="lomba/img/BADMINTON.png" alt="">
+                                <div class="courses-overlay">
+                                    <a class="btn btn-outline-primary border-2" href="lomba/badminton.php">Read More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>

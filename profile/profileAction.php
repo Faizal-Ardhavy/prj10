@@ -15,9 +15,9 @@
         $folder = null;
     }else{
         $folder = "../img/" . $filename;
+        update_gambar($folder, $_SESSION["id"]); 
     }    
     // // Get all the submitted data from the form
-    update_gambar($folder, $_SESSION["id"]); 
     // Now let's move the uploaded image into the folder: image
     move_uploaded_file($tempname, $folder);
 

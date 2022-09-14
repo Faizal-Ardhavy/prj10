@@ -712,7 +712,7 @@ print and (-ms-high-contrast:none) {
 .bg-yellow-600 {
     --bg-opacity: 1;
     background-color: #f3bd00;
-    background-color: rgba(126, 58, 242, var(--bg-opacity))
+    background-color: rgba(243, 189, 0, var(--bg-opacity))
 }
 
 .hover\:bg-gray-100:hover {
@@ -723,8 +723,8 @@ print and (-ms-high-contrast:none) {
 
 .hover\:bg-yellow-700:hover {
     --bg-opacity: 1;
-    background-color: #6c2bd9;
-    background-color: rgba(108, 43, 217, var(--bg-opacity))
+    background-color: #e1b000;
+    background-color: rgba(225, 176, 0, var(--bg-opacity))
 }
 
 .focus\:bg-white:focus {
@@ -739,8 +739,8 @@ print and (-ms-high-contrast:none) {
 
 .active\:bg-yellow-600:active {
     --bg-opacity: 1;
-    background-color: #7e3af2;
-    background-color: rgba(126, 58, 242, var(--bg-opacity))
+    background-color: #f3bd00;
+    background-color: rgba(243, 189, 0, var(--bg-opacity))
 }
 
 .theme-dark .dark\:bg-gray-700 {
@@ -855,8 +855,8 @@ print and (-ms-high-contrast:none) {
 
 .border-yellow-600 {
     --border-opacity: 1;
-    border-color: #7e3af2;
-    border-color: rgba(126, 58, 242, var(--border-opacity))
+    border-color:  #f3bd00;
+    border-color: rgba(243, 189, 0, var(--bg-opacity))
 }
 
 .focus\:border-gray-500:focus {
@@ -879,14 +879,14 @@ print and (-ms-high-contrast:none) {
 
 .focus\:border-yellow-300:focus {
     --border-opacity: 1;
-    border-color: #cabffd;
-    border-color: rgba(202, 191, 253, var(--border-opacity))
+    border-color:  #eed67e;
+    border-color: rgba(238, 214, 126, var(--border-opacity))
 }
 
 .focus\:border-yellow-400:focus {
     --border-opacity: 1;
-    border-color: #ac94fa;
-    border-color: rgba(172, 148, 250, var(--border-opacity))
+    border-color: #ffe070;
+    border-color: rgba(255, 224, 112, var(--border-opacity))
 }
 
 .hover\:border-gray-500:hover {
@@ -1693,14 +1693,14 @@ print and (-ms-high-contrast:none) {
 
 .text-yellow-100 {
     --text-opacity: 1;
-    color: #edebfe;
-    color: rgba(237, 235, 254, var(--text-opacity))
+    color: #fffaea;
+    color: rgba(255, 250, 234, var(--text-opacity))
 }
 
 .text-yellow-200 {
     --text-opacity: 1;
-    color: #dcd7fe;
-    color: rgba(220, 215, 254, var(--text-opacity))
+    color: #faeab3;
+    color: rgba(250, 234, 179, var(--text-opacity))
 }
 
 .text-yellow-600 {
@@ -1711,13 +1711,13 @@ print and (-ms-high-contrast:none) {
 
 .focus-within\:text-yellow-500:focus-within {
     --text-opacity: 1;
-    color: #9061f9;
-    color: rgba(144, 97, 249, var(--text-opacity))
+    color: #f6d046;
+    color: rgba(252, 210, 57, var(--text-opacity))
 }
 
 .focus-within\:text-yellow-600:focus-within {
     --text-opacity: 1;
-    color: #7e3af2;
+    color: #f3bd00;
     color: rgba(126, 58, 242, var(--text-opacity))
 }
 
@@ -1813,19 +1813,19 @@ print and (-ms-high-contrast:none) {
 
 .theme-dark .dark\:text-yellow-300 {
     --text-opacity: 1;
-    color: #cabffd;
-    color: rgba(202, 191, 253, var(--text-opacity))
+    color: #eed67e;
+    color: rgba(238, 214, 126, var(--text-opacity))
 }
 
 .theme-dark .dark\:text-yellow-400 {
     --text-opacity: 1;
-    color: #ac94fa;
+    color: #eed67e;
     color: rgba(172, 148, 250, var(--text-opacity))
 }
 
 .theme-dark .dark\:focus-within\:text-yellow-400:focus-within {
     --text-opacity: 1;
-    color: #ac94fa;
+    color: #eed67e;
     color: rgba(172, 148, 250, var(--text-opacity))
 }
 
@@ -1997,7 +1997,7 @@ print and (-ms-high-contrast:none) {
 }
 
 .focus\:shadow-outline-yellow:focus {
-    box-shadow: 0 0 0 3px rgba(202, 191, 253, .45)
+    box-shadow: 0 0 0 3px rgba(243, 189, 0, .45)
 }
 
 .theme-dark .dark\:focus\:shadow-outline-gray:focus {

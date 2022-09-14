@@ -159,9 +159,22 @@
                         <?php
                             }
                         ?>
-
-                            <input type="file" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
+                        <?php 
+                            if($data["foto"]!=null){
+                                 
+                        ?>
+                            <input type="file" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg" value = <?= $data["foto"]?>>
                             <label for="gambar">Upload Foto Formal (Max 2MB)</label>
+
+                        <?php
+                        }else{
+                        ?>
+                            <input required type="file" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
+                            <label for="gambar">Upload Foto Formal (Max 2MB)</label>
+                        <?php
+                        }
+                        ?>
+
                     </fieldset>
                     <!-- <fieldset>
                         <legend><span class="number">2</span> Profil Anggota</legend>
