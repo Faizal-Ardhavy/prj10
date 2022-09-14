@@ -282,10 +282,21 @@
                   aria-label="Account"
                   aria-haspopup="true"
                 >
-                <h1>USER</h1>
+                <h1><?=$datas["nama"]?></h1>
                   <img
                     class="object-cover w-8 h-8 rounded-full"
-                    src="<?=$datas["foto"]?>"
+                    <img class="object-cover w-8 h-8 rounded-full"
+                            <?php
+                                if($datas["foto"]!=null){
+                            ?>
+                                src="<?=$datas["foto"]?>"
+                            <?php
+                            }else{
+                            ?>
+                            src="../img/png-transparent-user-profile-system-user-account-user-story-sphere-black-silhouette.png"
+                            <?php
+                            }
+                            ?>                    
                     alt=""
                     aria-hidden="true"
                   />
@@ -303,7 +314,7 @@
                     <li class="flex">
                       <a
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                        href="#"
+                        href="../profile/profile.php""
                       >
                         <svg
                           class="w-4 h-4 mr-3"
@@ -342,71 +353,91 @@
                       <thead>
                           <tr
                               class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
-                              <th class="px-4 py-3">Client</th>
-                              <th class="px-4 py-3">Amount</th>
-                              <th class="px-4 py-3">Status</th>
+                              <th class="px-4 py-3">Lomba</th>
+                              <th class="px-4 py-3">Jumlah Biaya Pendaftaran</th>
+                              <th class="px-4 py-3">Status Administratif</th>
                           </tr>
                       </thead>
                       <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
+                        <?php
+                              while($data = mysqli_fetch_assoc($queri)){
+                        ?>
                           <tr class="text-gray-700 dark:text-gray-400">
                               <td class="px-4 py-3">
                                   <div class="flex items-center text-sm">
                                       <!-- Avatar with inset shadow -->
                                       <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
                                           <img class="object-cover w-full h-full rounded-full"
-                                              src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
+                                              src="../img/Tak berjudul89_20220815144205.png"
                                               alt="" loading="lazy" />
                                           <div class="absolute inset-0 rounded-full shadow-inner"
                                               aria-hidden="true"></div>
                                       </div>
                                       <div>
-                                          <p class="font-semibold">Hans Burger</p>
+                                          <p class="font-semibold"><?=$data["divisi"]?></p>
                                           <p class="text-xs text-gray-600 dark:text-gray-400">
-                                              10x Developer
+                                          <?=$data["nama_tim"]?>
                                           </p>
                                       </div>
                                   </div>
                               </td>
                               <td class="px-4 py-3 text-sm">
-                                  $ 863.45
-                              </td>
-                              <td class="px-4 py-3 text-xs">
-                                  <span
-                                      class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100">
-                                      Approved
-                                  </span>
-                              </td>
-                          </tr>
+                              <?php
+                                if($data["divisi"]=="Photography"){
+                              ?>
+                                Rp 30.000 - Rp 35.000
+                              <?php
+                                }elseif($data["divisi"]=="Futsal"){
+                              ?>
+                                Rp 350.000
+                                <?php
+                                }elseif($data["divisi"]=="CPC"){
+                              ?>
+                              Rp 60.000 - Rp 75.000
+                              <?php
+                                }elseif($data["divisi"]=="LCT"){
+                              ?>
+                              Rp 150.000
+                              <?php
+                                }elseif($data["divisi"]=="ML"){
+                              ?>
+                              Rp 50.000
+                              <?php
+                                }elseif($data["divisi"]=="Badminton Ganda"){
+                              ?>
+                              Rp 125.000
+                              <?php
+                                }elseif($data["divisi"]=="Badminton Tunggal"){
+                              ?>
+                              Rp 75.000
+                              <?php
+                                }
+                              ?>
 
-                          <tr class="text-gray-700 dark:text-gray-400">
-                              <td class="px-4 py-3">
-                                  <div class="flex items-center text-sm">
-                                      <!-- Avatar with inset shadow -->
-                                      <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                          <img class="object-cover w-full h-full rounded-full"
-                                              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&facepad=3&fit=facearea&s=707b9c33066bf8808c934c8ab394dff6"
-                                              alt="" loading="lazy" />
-                                          <div class="absolute inset-0 rounded-full shadow-inner"
-                                              aria-hidden="true"></div>
-                                      </div>
-                                      <div>
-                                          <p class="font-semibold">Jolina Angelie</p>
-                                          <p class="text-xs text-gray-600 dark:text-gray-400">
-                                              Unemployed
-                                          </p>
-                                      </div>
-                                  </div>
-                              </td>
-                              <td class="px-4 py-3 text-sm">
-                                  $ 369.95
                               </td>
                               <td class="px-4 py-3 text-xs">
+                              <?php
+                                if($data["statusPembayaran"]==null || $data["statusPembayaran"]==1){
+                              ?>
                                   <span
                                       class="px-2 py-1 font-semibold leading-tight text-orange-700 bg-orange-100 rounded-full dark:text-white dark:bg-orange-600">
                                       Pending
                                   </span>
+                                  <?php
+                                  }else{
+                                ?>
+                                  <span
+                                      class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full dark:bg-green-700 dark:text-green-100">
+                                      Approved
+                                  </span>
+                                  <?php
+                                  }
+                                  ?>
                               </td>
                           </tr>
+                          <?php
+                          }
+                          ?>
                       </tbody>
                   </table>
               </div>

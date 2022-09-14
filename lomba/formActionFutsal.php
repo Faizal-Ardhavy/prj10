@@ -54,7 +54,7 @@
     $birth10 = $_POST["birth10"];
 
     
-    $id_pendaftaran =insert_pendaftaran($nama, $instansi, $mail, 'Futsal');
+    $id_pendaftaran =insert_pendaftaran($namaTim, $instansi, $mail, 'Futsal',$_SESSION["id"]);
     insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran,'NULL');
     insert_anggota($nama2, $mail, $telpon2, $birth2, $id_pendaftaran,'NULL');
     insert_anggota($nama3, $mail, $telpon3, $birth3, $id_pendaftaran,'NULL');
@@ -67,5 +67,5 @@
     insert_anggota($nama10, $mail, $telpon10, $birth10, $id_pendaftaran,'NULL');
 
 
-    header("Location: ../dashboard/dashboard.php");
+    header("Location: ../dashboard/lomba.php");
 ?>

@@ -21,5 +21,5 @@
     $id_pendaftaran = insert_pendaftaran($nama, $instansi, $mail, 'CPC',$id);
     insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran,'NULL');
 
-    header("Location: ../dashboard/dashboard.php");
+    header("Location: ../dashboard/lomba.php");
 ?>

@@ -169,7 +169,7 @@
                         <button class="align-middle rounded-full focus:shadow-outline-yellow focus:outline-none"
                             @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account"
                             aria-haspopup="true">
-                            <h1>User</h1>
+                            <h1><?=$datas["nama"]?></h1>
                             <img class="object-cover w-8 h-8 rounded-full"
                             <?php
                                 if($datas["foto"]!=null){
@@ -193,7 +193,7 @@
                                 aria-label="submenu">
                                 <li class="flex">
                                     <a class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                                        href="#">
+                                        href="../profile/profile.php">
                                         <svg class="w-4 h-4 mr-3" aria-hidden="true" fill="none" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
                                             stroke="currentColor">

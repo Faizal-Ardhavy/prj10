@@ -29,12 +29,12 @@
     $birth5 = $_POST["birth5"];
 
     
-    $id_pendaftaran =insert_pendaftaran($nama, $instansi, $mail, 'ML');
+    $id_pendaftaran =insert_pendaftaran($namaTim, $instansi, $mail, 'ML',$_SESSION["id"]);
     insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran,'NULL');
     insert_anggota($nama2, $mail, $telpon2, $birth2, $id_pendaftaran,'NULL');
     insert_anggota($nama3, $mail, $telpon3, $birth3, $id_pendaftaran,'NULL');
     insert_anggota($nama4, $mail, $telpon4, $birth4, $id_pendaftaran,'NULL');
     insert_anggota($nama5, $mail, $telpon5, $birth5, $id_pendaftaran,'NULL');
 
-    header("Location: ../dashboard/dashboard.php");
+    header("Location: ../dashboard/lomba.php");
 ?>
