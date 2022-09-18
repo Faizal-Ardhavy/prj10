@@ -81,7 +81,7 @@
                         <?php
                             }else{
                         ?>
-                        <input type="text" id="telp" name="telp">
+                        <input type="number" id="telp" name="telp">
                         <?php
                             }
                         ?>
@@ -112,7 +112,11 @@
                         <?php
                             }
                         ?>
-
+                        <label for="gambar">Bukti Identitas (Kartu Pelajar)</label>
+                        <div class="input-group">
+                            <input required type="file" class="form-control mb-3" id="gambar" name="gambar"
+                                accept="image/x-png,image/gif,image/jpeg">
+                        </div>
 
 
                     </fieldset>

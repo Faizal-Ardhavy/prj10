@@ -409,7 +409,7 @@ require "function.php";
 
 
     <!-- Team Start -->
-    <div class="container-xxl py-6">
+    <!-- <div class="container-xxl py-6">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h6 class="text-primary text-uppercase mb-2">Sponsor Kami</h6>
@@ -482,12 +482,12 @@ require "function.php";
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Team End -->
 
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-6">
+    <!-- <div class="container-xxl py-6">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h6 class="text-primary text-uppercase mb-2">Warta PRJ</h6>
@@ -536,7 +536,7 @@ require "function.php";
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 

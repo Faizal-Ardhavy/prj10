@@ -11,13 +11,14 @@
         return mysqli_query(connect("prjx"), "UPDATE peserta SET email = '$mail', nama = '$nama', telpon = '$telp', instansi = '$instansi', pekerjaan = '$job', birth = '$birth' Where id = '$id'");
     }
 
+    function update_identitas($gambar, $nama) {
+        return mysqli_query(connect("prjx"), "UPDATE anggota SET bukti_identitas = '$gambar' Where nama = '$nama'");
+    }
+
     function update_gambar($gambar, $id) {
         return mysqli_query(connect("prjx"), "UPDATE peserta SET foto = '$gambar' Where id = '$id'");
     }
 
-    function update_karya($gambar, $id) {
-        return mysqli_query(connect("prjx"), "UPDATE anggota SET karya = '$gambar' Where id = '$id'");
-    }
 
     function login_check($mail, $pass){
         
@@ -48,8 +49,8 @@
     //     return
     // }
 
-    function insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran,$karya){
-        return mysqli_query(connect("prjx"), "INSERT INTO `anggota`(`nama`, `no_hp`, `id_pendaftaran`,`karya`) VALUES ('$nama','$telpon','$id_pendaftaran','$karya')");
+    function insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran, $instansi){
+        return mysqli_query(connect("prjx"), "INSERT INTO `anggota`(`nama`, `email`,`birth`, `no_hp`, `id_pendaftaran`,`instansi`) VALUES ('$nama','$mail','$birth','$telpon','$id_pendaftaran','$instansi')");
     }
 
 ?>

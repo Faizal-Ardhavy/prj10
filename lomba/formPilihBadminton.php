@@ -13,6 +13,7 @@
 <html lang="en">
 
 <head>
+    <link href="img/_Logo.png" rel="icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +44,7 @@
                 <form>
                     <h1> Pilih Katagori </h1>
 
-                    <button onclick="location.href='formBTunggal.php'" type="button">Tunggal</button>
+                    <button onclick="location.href='formBTunggal.php'" type="button">Tunggal Putra</button>
                     <button onclick="location.href='formBGanda.php'" type="button">Ganda Campuran</button>
 
                 </form>

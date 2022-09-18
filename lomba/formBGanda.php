@@ -39,7 +39,7 @@
     <body>
         <div class="row">
             <div class="col-md-12">
-                <form action="formActionBGanda.php" method="post" enctype= "multipart/form-data">
+                <form action="formActionBGanda.php" method="post" enctype="multipart/form-data">
                     <h1> Form Pendaftaran Tim</h1>
 
                     <fieldset>
@@ -68,7 +68,7 @@
                         <?php
                             }else{
                         ?>
-                        <input type="text" id="telp" name="telp">
+                        <input type="number" id="telp" name="telp">
                         <?php
                             }
                         ?>
@@ -95,10 +95,14 @@
                         <?php
                             }else{
                         ?>
-                        <input type="date" id="birth" name="birth">                        
+                        <input type="date" id="birth" name="birth">
                         <?php
                             }
                         ?>
+                        <div class="input-group">
+                            <input required type="file" class="form-control mb-3" id="gambar" name="gambar"
+                                accept="image/x-png,image/gif,image/jpeg">
+                        </div>
 
 
                         <legend><span class="number">2</span> Profil Anggota 2</legend>
@@ -107,34 +111,38 @@
                         <input type="text" id="name2" name="name2">
 
                         <label for="name">No.Telpon</label>
-                        <input type="text" id="telp2" name="telp2">
+                        <input type="number" id="telp2" name="telp2">
 
 
                         <label for="school">Instansi</label>
                         <input type="text" id="school2" name="school2">
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth2" name="birth2">                        
+                        <input type="date" id="birth2" name="birth2">
+                        <div class="input-group">
+                            <input required type="file" class="form-control mb-3" id="gambar2" name="gambar2"
+                                accept="image/x-png,image/gif,image/jpeg">
+                        </div>
 
 
                         <legend><span class="number">3</span> Profil Tim</legend>
-                            <label for="name">Email</label>
-                            <?php 
+                        <label for="name">Email</label>
+                        <?php 
                                 if($data["email"]!=null){ 
                             
                             ?>
-                            <input type="email" id="username" name="username" value=<?= $data["email"] ?>>
-                            <?php
+                        <input type="email" id="username" name="username" value=<?= $data["email"] ?>>
+                        <?php
                                 }else{
                             ?>
-                            <input type="email" id="username" name="username">
-                            <?php
+                        <input type="email" id="username" name="username">
+                        <?php
                                 }
                             ?>
 
-                            <label for="name">Nama Tim</label>
-                            <input type="text" id="namaTim" name="namaTim">
-                        
+                        <label for="name">Nama Tim</label>
+                        <input type="text" id="namaTim" name="namaTim">
+
                     </fieldset>
                     <fieldset>
                         <!-- <legend><span class="number">2</span> Profil Anggota</legend>
@@ -149,7 +157,7 @@
 
                         <label for="school">Asal Sekolah</label>
                         <input type="text" id="school" name="school"> -->
-                        
+
 
                         <!-- <label for="job">Job Role:</label>
                         <select id="job" name="user_job">

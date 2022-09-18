@@ -39,7 +39,7 @@
     <body>
         <div class="row">
             <div class="col-md-12">
-                <form action="formActionCPC.php" method="post" enctype= "multipart/form-data">
+                <form action="formActionCPC.php" method="post" enctype="multipart/form-data">
                     <h1> Form Pendaftaran </h1>
 
                     <fieldset>
@@ -108,10 +108,16 @@
                         <?php
                             }else{
                         ?>
-                        <input type="date" id="birth" name="birth">                        
+                        <input type="date" id="birth" name="birth">
                         <?php
                             }
                         ?>
+                        <label for="gambar">Bukti Identitas (Kartu Pelajar / Halaman Depan Rapot)</label>
+                        <div class="input-group">
+                            <input required type="file" class="form-control mb-3" id="gambar" name="gambar"
+                                accept="image/x-png,image/gif,image/jpeg">
+                        </div>
+
 
 
 
@@ -129,7 +135,7 @@
 
                         <label for="school">Asal Sekolah</label>
                         <input type="text" id="school" name="school"> -->
-                        
+
 
                         <!-- <label for="job">Job Role:</label>
                         <select id="job" name="user_job">
