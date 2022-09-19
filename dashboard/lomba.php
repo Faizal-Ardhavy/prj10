@@ -135,13 +135,18 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                     <li class="relative" style="list-style: none;">
                         <button class="align-middle rounded-full focus:outline-none" @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true">
                             <h1><?= $datas["nama"] ?></h1>
-                            <img class="object-cover w-8 h-8 rounded-full" <img class="object-cover w-8 h-8 rounded-full" <?php
-                                                                                                                            if ($datas["foto"] != null) {
-                                                                                                                            ?> src="<?= $datas["foto"] ?>" <?php
-                                                                                                                                                        } else {
-                                                                                                                                                            ?> src="../img/png-transparent-user-profile-system-user-account-user-story-sphere-black-silhouette.png" <?php
-                                                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                    ?> alt="" aria-hidden="true" />
+                            <img class="object-cover w-8 h-8 rounded-full"
+                            <?php
+                                if ($datas["foto"] != null) {
+                            ?>
+                                src="<?= $datas["foto"] ?>" 
+                            <?php
+                            } else {
+                            ?> src="../img/png-transparent-user-profile-system-user-account-user-story-sphere-black-silhouette.png" 
+                            <?php
+                            }
+                            ?>
+                            alt="" aria-hidden="true" />
                         </button>
                         <template x-if="isProfileMenuOpen">
                             <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click.away="closeProfileMenu" @keydown.escape="closeProfileMenu" class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:border-gray-700 dark:text-gray-300 dark:bg-gray-700" aria-label="submenu">
@@ -181,7 +186,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                                     <?php
                                     while ($data = mysqli_fetch_assoc($queri)) {
                                     ?>
-                                        <tr class="text-gray-700 dark:text-gray-400">
+                                        <tr onClick="window.location.href='www.google.com';" class="text-gray-700 dark:text-gray-400">
                                             <td class="px-4 py-3">
                                                 <div class="flex items-center text-sm">
                                                     <!-- Avatar with inset shadow -->

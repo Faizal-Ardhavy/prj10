@@ -19,6 +19,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link href="../img/_Logo.png" rel="icon">
   <link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <script src="./assets/js/init-alpine.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
@@ -39,7 +40,8 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
           <li class="relative px-6 py-3">
             <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="../index.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                </path>
               </svg>
               <span class="ml-4">Beranda</span>
             </a>
@@ -49,7 +51,8 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
           <li class="relative px-6 py-3">
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="lomba.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
+                </path>
               </svg>
               <span class="ml-4">Lomba</span>
             </a>
@@ -58,7 +61,8 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
             <span class="absolute inset-y-0 left-0 w-1 bg-yellow-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="pembayaran.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                </path>
               </svg>
               <span class="ml-4">Pembayaran</span>
             </a>
@@ -81,7 +85,8 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
             <span class="absolute inset-y-0 left-0 w-1 bg-yellow-600 rounded-tr-lg rounded-br-lg" aria-hidden="true"></span>
             <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100" href="dashboard.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                </path>
               </svg>
               <span class="ml-4">Dashboard</span>
             </a>
@@ -91,7 +96,8 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
           <li class="relative px-6 py-3">
             <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200" href="pembayaran.php">
               <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                </path>
               </svg>
               <span class="ml-4">Pembayaran</span>
             </a>
@@ -128,13 +134,13 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
           <li class="relative" style="list-style: none;">
             <button class="align-middle rounded-full focus:shadow-outline-yellow focus:outline-none" @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account" aria-haspopup="true">
               <h1><?= $datas["nama"] ?></h1>
-              <img class="object-cover w-8 h-8 rounded-full" <img class="object-cover w-8 h-8 rounded-full" <?php
-                                                                                                            if ($datas["foto"] != null) {
-                                                                                                            ?> src="<?= $datas["foto"] ?>" <?php
-                                                                                                            } else {
-                                                          ?> src="../img/png-transparent-user-profile-system-user-account-user-story-sphere-black-silhouette.png" <?php
-                                                                                                                                  }
-                                                                                                                                    ?> alt="" aria-hidden="true" />
+              <img class="object-cover w-8 h-8 rounded-full" <?php
+                                                              if ($datas["foto"] != null) {
+                                                              ?> src="<?= $datas["foto"] ?>" <?php
+                                                                                            } else {
+                                                                                              ?> src="../img/png-transparent-user-profile-system-user-account-user-story-sphere-black-silhouette.png" <?php
+                                                                                                                                                                    }
+                                                                                                                                                                      ?> alt="" aria-hidden="true" />
             </button>
             <template x-if="isProfileMenuOpen">
               <ul x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" @click.away="closeProfileMenu" @keydown.escape="closeProfileMenu" class="absolute right-0 w-56 p-2 mt-2 space-y-2 text-gray-600 bg-white border border-gray-100 rounded-md shadow-md dark:border-gray-700 dark:text-gray-300 dark:bg-gray-700" aria-label="submenu">
@@ -143,7 +149,8 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                       >
                         <svg
                           class=" w-4 h-4 mr-3" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                    <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z">
+                    </path>
                     </svg>
                     <span>Profile</span>
                   </a>
@@ -168,6 +175,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                     <th class="px-4 py-3">Lomba</th>
                     <th class="px-4 py-3">Jumlah Biaya Pendaftaran</th>
                     <th class="px-4 py-3">Status Administratif</th>
+                    <th class="px-4 py-3">Opsi</th>
                   </tr>
                 </thead>
                 <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
@@ -222,7 +230,6 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                         <?php
                         }
                         ?>
-
                       </td>
                       <td class="px-4 py-3 text-xs">
                         <?php
@@ -240,6 +247,21 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                         <?php
                         }
                         ?>
+                      </td>
+
+                      <td>
+                        <?php
+                            if($data["divisi"]=="Photography"){
+                              $link = "form/formPG.php"; 
+                            }
+                            else{
+                              $link = "form/form.php";
+                            }
+                        ?>
+                        <form action=<?= $link ?> method="post">
+                          <input type="hidden" name="id" value="<?= $data["id"] ?>">
+                          <input type="submit" value="Bayar" class="text-xs px-2 py-1 font-semibold leading-tight text-gray-700 bg-gray-700 rounded-full dark:bg-gray-100 dark:text-gray-700">
+                        </form>
                       </td>
                     </tr>
                   <?php

@@ -19,6 +19,16 @@
         return mysqli_query(connect("prjx"), "UPDATE peserta SET foto = '$gambar' Where id = '$id'");
     }
 
+    function update_pembayaran($gambar, $id){
+        return mysqli_query(connect("prjx"), "UPDATE pendaftaran SET buktiPembayaran = '$gambar' Where id = '$id'");
+
+    }
+
+    function update_karya($gambar, $id){
+        return mysqli_query(connect("prjx"), "UPDATE pendaftaran SET karya = '$gambar' Where id = '$id'");
+
+    }
+
 
     function login_check($mail, $pass){
         
@@ -52,5 +62,6 @@
     function insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran, $instansi){
         return mysqli_query(connect("prjx"), "INSERT INTO `anggota`(`nama`, `email`,`birth`, `no_hp`, `id_pendaftaran`,`instansi`) VALUES ('$nama','$mail','$birth','$telpon','$id_pendaftaran','$instansi')");
     }
+
 
 ?>

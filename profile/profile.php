@@ -141,7 +141,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                 <?php
                 if ($data["foto"] != null) :
                 ?>
-                    <img src="../img/<?php echo $data["foto"]; ?>" class="my-2 w-100 h-50 img-upload">
+                    <img src="<?php echo $data["foto"]; ?>" class="my-2 w-100 h-50 img-upload">
 
                     <label class="" for="gambar">Upload Foto Formal (max. 2MB)</label>
                     <div class="input-group">
