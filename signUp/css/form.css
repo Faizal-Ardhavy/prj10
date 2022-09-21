@@ -18,7 +18,7 @@
   
   form {
     max-width: 60vh;
-    margin: 10px auto;
+    /* margin: 10px auto; */
     padding: 3.5rem;
     background: #f8f8f8;
     border-radius: 8px;
@@ -46,7 +46,6 @@
     border: none;
     border-radius: 8px;
     height: auto;
-    margin: 0;
     padding: 10px;
     width: 100%;
     background-color: white;

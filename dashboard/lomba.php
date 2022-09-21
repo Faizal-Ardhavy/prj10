@@ -110,7 +110,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                 <div class="container flex d-flex flex-row items-center justify-between h-full px-6 mx-auto text-yellow-600 dark:text-yellow-300">
                     <!-- Mobile hamburger -->
                     <button class="p-1 mr-5 -ml-1 rounded-md md:hidden focus:outline-none focus:shadow-outline-yellow" @click="toggleSideMenu" aria-label="Menu">
-                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                        <svg class="w-6 h-6" aria-hidden="true" fill="#f3bd00" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
                         </svg>
                     </button>
@@ -119,7 +119,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                     <li class="flex">
                         <button class="rounded-md focus:outline-none" @click="toggleTheme" aria-label="Toggle color mode">
                             <template x-if="!dark">
-                                <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-5 h-5" aria-hidden="true" fill="#f3bd00" viewBox="0 0 20 20">
                                     <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
                                 </svg>
                             </template>

@@ -1,0 +1,26 @@
+DirectoryIndex index.php login/login.php signUp/signUp.php
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+# RewriteRule ^ profiles page.php ? p = profile
+# RewriteRule ^ visimisi $ page.php ? p = visimisi
+# RewriteRule ^ zona $ zona.php
+# RewriteRule ^ struktur - ruang $ peta_sr.php
+# RewriteRule ^ kawasan - strategis $ peta_ks.php
+# RewriteRule ^ pola - ruang $ peta_pr.php
+# RewriteRule ^ about $ page.php ? p = about
+# RewriteRule ^ regulasi $ page.php ? p = regulasi
+# RewriteRule ^ dasarhukum $ page.php ? p - dasarhukum
+# RewriteRule ^ perda $ page.php ? p - perda
+# RewriteRule ^ petartrw $ page.php ? p = petartrw
+# RewriteRule ^ teknisrtrw $ page.php ? p - teknisrtrw
+# RewriteRule ^ pengaduan $ pengaduan.php
+# RewriteRule ^ daftar $ register.php
+# RewriteRule ^ services $ layanan.php
+# RewriteRule ^ signin $ signih.php
+# RewriteRule ^ search $ search.php
+# RewriteRule ^ tracking $ tracking.php
+# RewriteRule ^ ( [ a - zA - Z0-9 - / + ] [ ~ \ % ; a - zA - Z ' ] + ) $ page.php ? p = oops [ NC , L ]

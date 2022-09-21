@@ -8,6 +8,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="img/_Logo.png" rel="icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
@@ -35,12 +36,12 @@
         <div class="row">
             <div class="col-md-12">
                 <form action="signUp_action.php" method="post">
-                    <h1> Pendataan Akun Peserta </h1>
+                    <h1> Pendaftaran Akun Peserta </h1>
 
-                    <fieldset>
+                    <fieldset class="mb-3">
                         <legend><span class="number">1</span> Profil</legend>
 
-                        <label for="name">Username atau Email</label>
+                        <label for="name">Email</label>
                         <input type="email" id="username" name="username">
 
                         <label for="name">Nama Lengkap</label>
