@@ -1,3 +1,4 @@
+# AccessFileName ht.access
 DirectoryIndex index.php login/login.php signUp/signUp.php
 Options -Indexes
 
@@ -5,6 +6,13 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# <FilesMatch "\.(css|gif|png|jpeg)$">
+# Order Allow,Deny 
+# Deny from all 
+# </FilesMatch>
+# RewriteCond % { HTTP_REFERER } ! ^ http : // http://localhost/prj10 [ NC ]
+# RewriteRule \ . ( css | js | scss ) $ - [ F , L ]
 # RewriteRule ^ profiles page.php ? p = profile
 # RewriteRule ^ visimisi $ page.php ? p = visimisi
 # RewriteRule ^ zona $ zona.php
