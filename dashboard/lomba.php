@@ -197,7 +197,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                                     <?php
                                     while ($data = mysqli_fetch_assoc($queri)) {
                                     ?>
-                                        <tr onClick="window.location.href='www.google.com';" class="text-gray-700 dark:text-gray-400">
+                                        <tr class="text-gray-700 dark:text-gray-400">
                                             <td class="px-4 py-3">
                                                 <div class="flex items-center text-sm">
                                                     <!-- Avatar with inset shadow -->

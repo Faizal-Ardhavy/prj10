@@ -39,7 +39,7 @@
     <body>
         <div class="row">
             <div class="col-md-12">
-                <form action="formActionBGanda.php" method="post" enctype="multipart/form-data">
+                <form action="formActionBGanda" method="post" enctype="multipart/form-data">
                     <h1> Form Pendaftaran Tim</h1>
 
                     <fieldset>

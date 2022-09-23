@@ -30,12 +30,12 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
     <div class="d-flex flex-column">
         <a href = "../index.php" type = "button" class="btn-back"><i class="bi bi-arrow-left-short"></i><span class="text-dark">Back</span></a>
 
-        <form action="profileAction.php" method="post" enctype="multipart/form-data">
+        <form action="profileAction" method="post" enctype="multipart/form-data">
             <h1> Pendataan Peserta </h1>
             <fieldset>
                 <legend><span class="number">1</span> Profil</legend>
 
-                <label for="name">Username atau Email</label>
+                <label for="name">Email</label>
                 <?php
                 if ($data["email"] != null) :
                 ?>

@@ -43,7 +43,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
     <body>
         <div class="row">
             <div class="col-md-12">
-                <form action="formActionPG.php/?id=<?=$id?>" method="post" enctype="multipart/form-data">
+                <form action="formActionPG" method="post" enctype="multipart/form-data">
                     <h1> Form Pembayaran </h1>
 
                     <fieldset>
@@ -76,6 +76,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
 
                     <label class="" for="gambar">Upload Bukti Pembayaran</label>
                     <div class="input-group">
+                        <input type="hidden" name="id" value="<?=$id?>">
                         <input type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
                     </div>
 
@@ -85,6 +86,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                 ?>
                     <label class="" for="gambar">Upload Bukti Pembayaran</label>
                     <div class="input-group">
+                        <input type="hidden" name="id" value="<?=$id?>">
                         <input required type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
                     </div>
                 <?php
@@ -99,6 +101,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
 
                     <label class="" for="gambar">Upload Karya</label>
                     <div class="input-group">
+                        <input type="hidden" name="id" value="<?=$id?>">
                         <input type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
                     </div>
 
@@ -108,6 +111,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                 ?>
                     <label class="" for="gambar">Upload Karya</label>
                     <div class="input-group">
+                        <input type="hidden" name="id" value="<?=$id?>">
                         <input required type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
                     </div>
                 <?php

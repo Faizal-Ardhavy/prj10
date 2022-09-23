@@ -39,7 +39,7 @@
     <body>
         <div class="row">
             <div class="col-md-12">
-                <form action="formActionCPC.php" method="post" enctype="multipart/form-data">
+                <form action="formActionCPC" method="post" enctype="multipart/form-data">
                     <h1> Form Pendaftaran </h1>
 
                     <fieldset>

@@ -39,7 +39,7 @@
     <body>
         <div class="row">
             <div class="col-md-12">
-                <form action="formActionLCT.php" method="post" enctype="multipart/form-data">
+                <form action="formActionLCT" method="post" enctype="multipart/form-data">
                     <h1> Form Pendaftaran Tim</h1>
 
                     <fieldset>

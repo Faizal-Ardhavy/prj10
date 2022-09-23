@@ -263,10 +263,10 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                       <td>
                         <?php
                             if($data["divisi"]=="Photography"){
-                              $link = "form/formPG.php"; 
+                              $link = "form/formPG"; 
                             }
                             else{
-                              $link = "form/form.php";
+                              $link = "form/form";
                             }
                         ?>
                         <form action=<?= $link ?> method="post">

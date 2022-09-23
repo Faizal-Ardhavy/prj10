@@ -1,6 +1,6 @@
 <?php
 require '../../function.php';
-    $id = $_GET["id"];
+    $id = $_POST["id"];
     $nama = $_POST["name"];
 
     $filename = $_FILES["gambar"]["name"];
@@ -14,5 +14,5 @@ require '../../function.php';
     }    
     
     move_uploaded_file($tempname, $folder);
-    header("Location: ../../pembayaran.php");
+    header("Location: ../pembayaran");
 ?>
