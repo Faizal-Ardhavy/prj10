@@ -1,11 +1,11 @@
 <?php
     require '../function.php';
     if (isset($_POST["login"])) {
-        $username = $_POST["email"];
+        $username =  mysqli_real_escape_string(connect("prjx"),$_POST["email"]);
         $_SESSION["username"] = $username;
         $queri = mysqli_query(connect("prjx"), "SELECT * FROM peserta WHERE email = '$username'");
         $data = mysqli_fetch_assoc($queri);
-        $isi = $_POST["password"];
+        $isi =  mysqli_real_escape_string(connect("prjx"),$_POST["password"]);
         $_SESSION["login"]=login_check($username, $isi);
 
     }

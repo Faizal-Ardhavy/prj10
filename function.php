@@ -30,6 +30,15 @@
     }
 
 
+    function registrasi($data){
+        $email = htmlspecialchars( $data);
+        $temp = mysqli_query(connect("prjx"), "SELECT email FROM peserta WHERE email = '$email'");   
+        if(mysqli_fetch_assoc($temp)){
+           return false;
+        }
+    }
+
+
     function login_check($mail, $pass){
         
         $query = mysqli_query(connect("prjx"), "SELECT * FROM peserta WHERE email = '$mail'");
