@@ -7,7 +7,7 @@
   }
   if(isset($_GET['id'])){
     $id = mysqli_real_escape_string($sql,$_GET['id']);
-    mysqli_query($sql, "DELETE FROM project WHERE id='$id'");
+    mysqli_query($sql, "DELETE FROM pendaftaran WHERE id='$id'");
     header('Location: index.php');
   }
 	if(isset($_SESSION['divisi'])) { 
@@ -62,22 +62,27 @@
                                                 <th>Divisi</th>
                                                 <th>Nama Tim</th>
                                                 <th>Nama Pendaftar</th>
+                                                <th>Bukti Pembayaran</th>
                                                 <th>Status Pembayaran</th>
                                                  <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                           <?php
-                                          $que = "SELECT pendaftaran.id, pendaftaran.divisi,pendaftaran.nama_tim, peserta.nama,pendaftaran.statusPembayaran FROM pendaftaran INNER JOIN peserta ON pendaftaran.id_peserta = peserta.id WHERE divisi LIKE '%$div'";
+                                          $que = "SELECT pendaftaran.id, pendaftaran.divisi,pendaftaran.nama_tim, peserta.nama,pendaftaran.buktiPembayaran,pendaftaran.statusPembayaran FROM pendaftaran INNER JOIN peserta ON pendaftaran.id_peserta = peserta.id WHERE divisi LIKE '%$div'";
                                         $data = mysqli_query($sql, $que);
                                         $j=1;
                                             while($i = mysqli_fetch_array($data)){
+                                             $img = preg_replace('/^..\/..\/...\//i', '', $i['buktiPembayaran']);
                                             ?>
                                             <tr>
                                                 <td><?=$j?></td>
                                                 <td class="text-bold-500"><?=$i['divisi'];?></td>
                                                 <td class="text-bold-500"><?=$i['nama_tim'];?></td>
                                                 <td class="text-bold-500"><?=$i['nama'];?></td>
+                                                <td class="text-bold-500">
+                                                  <img width="100" height="100" src="../img/<?=$img?>">
+                                                </td>
                                                 <td class="text-bold-500">
                                                   <?php 
                                                   if ($i["statusPembayaran"] == null || $i["statusPembayaran"] == 1) {
