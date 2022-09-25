@@ -7,8 +7,11 @@
   }
   if(isset($_GET['id'])){
     $id = mysqli_real_escape_string($sql,$_GET['id']);
-    mysqli_query($sql, "DELETE FROM pendaftaran WHERE id='$id'");
-    header('Location: index.php');
+    $q1 = "DELETE FROM anggota WHERE id_pendaftaran='$id'";
+    $q2 = "DELETE FROM pendaftaran WHERE id='$id'";
+    mysqli_query($sql, $q1);
+    mysqli_query($sql, $q2);
+     header('Location: index.php');
   }
 	if(isset($_SESSION['divisi'])) { 
     $div = $_SESSION['divisi'];
