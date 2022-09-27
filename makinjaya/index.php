@@ -136,6 +136,22 @@
                                                                     <input type="text" name="nama" class="form-control"
                                                                         value="<?php echo $i['nama']; ?>" readonly>
                                                                 </div>
+                                                                <?php 
+                                                                $iid =$i['id'];
+                                                                $g=1;
+                                                                $que = mysqli_query($sql,"SELECT * FROM anggota WHERE id_pendaftaran = $iid");
+                                                                while($getAnggota = mysqli_fetch_array($que)){
+                                                                  $imgg = preg_replace('/^..\/..\/...\//i', '', $getAnggota['bukti_identitas']);
+                                                                  ?>
+                                                                  <div>
+                                                                    <label for="exampleFormControlInput1">Nama Anggota <?=$g?></label>
+                                                                    <input type="text" name="nama" class="form-control"
+                                                                        value="<?=$getAnggota['nama']?>" readonly>
+                                                                  </div>
+                                                                  <div>
+                                                                    <img class="py-3" width="300" height="300" src="../img/<?=$imgg?>">
+                                                                  </div>
+                                                                <?php $g++; }?>
                                                                 <div class="form-group">
                                                                     <label for="exampleFormControlInput1">Status Pembayaran</label>
                                                                     <select name="statusPembayaran" class="form-select">
