@@ -113,7 +113,7 @@
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">Edit Showcase</h5>
+                                                            <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
                                                             <button type="button" class="close" data-dismiss="modal"
                                                                 aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
@@ -149,7 +149,7 @@
                                                                         value="<?=$getAnggota['nama']?>" readonly>
                                                                   </div>
                                                                   <div class="form-group">
-                                                                    <?php if($div == 'ml'){ ?>
+                                                                    <?php if($div == 'ml' || $div == 'ML' ){ ?>
                                                                       <label for="exampleFormControlInput1">Username <?=$g?></label>
                                                                       <input type="text" name="nama" class="form-control py-3"
                                                                         value="<?=$getAnggota['bukti_identitas']?>" readonly>
