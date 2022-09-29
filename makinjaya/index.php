@@ -143,13 +143,19 @@
                                                                 while($getAnggota = mysqli_fetch_array($que)){
                                                                   $imgg = preg_replace('/^..\/..\/...\//i', '', $getAnggota['bukti_identitas']);
                                                                   ?>
-                                                                  <div>
-                                                                    <label for="exampleFormControlInput1">Nama Anggota <?=$g?></label>
+                                                                  <div class="form-group">
+                                                                    <label for="exampleFormControlInput1">Anggota <?=$g?></label>
                                                                     <input type="text" name="nama" class="form-control"
                                                                         value="<?=$getAnggota['nama']?>" readonly>
                                                                   </div>
-                                                                  <div>
-                                                                    <img class="py-3" width="300" height="300" src="../img/<?=$imgg?>">
+                                                                  <div class="form-group">
+                                                                    <?php if($div == 'ml'){ ?>
+                                                                      <label for="exampleFormControlInput1">Username <?=$g?></label>
+                                                                      <input type="text" name="nama" class="form-control py-3"
+                                                                        value="<?=$getAnggota['bukti_identitas']?>" readonly>
+                                                                    <?php }else{ ?>
+                                                                      <img class="py-3" width="300" height="300" src="../img/<?=$imgg?>">
+                                                                    <?php } ?>
                                                                   </div>
                                                                 <?php $g++; }?>
                                                                 <div class="form-group">
