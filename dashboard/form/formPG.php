@@ -4,7 +4,7 @@ $id = $_POST["id"];
 $queri = mysqli_query(connect("prjx"), "SELECT * FROM pendaftaran WHERE id = '$id'");
 $data = mysqli_fetch_assoc($queri);
 if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
-    header("Location: ../login/login.html");
+    header("Location: ../../login/login.html");
 }
 ?>
 
@@ -48,79 +48,165 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
 
                     <fieldset>
                         <legend><span class="number">1</span>Administrasi</legend>
-
-                        <label for="name">Atas Nama</label>
-                        <?php 
-                            if($data["nama_tim"]!=null){ 
-                        
-                        ?>
-                        <input type="text" id="name" name="name" value=" <?=$data["nama_tim"]?>" readonly>
                         <?php
-                            }
+                            if($data["statusPembayaran"]==2){
                         ?>
 
-                        <label for="name">Divisi</label>
-                        <?php 
-                            if($data["divisi"]!=null){ 
-                        
-                        ?>
-                        <input type="text" id="telp" name="telp" value=<?= $data["divisi"]?> readonly>
-                        <?php
-                            }
-                        ?>
+                            <label for="name">Atas Nama</label>
+                            <?php 
+                                if($data["nama_tim"]!=null){ 
+                            
+                            ?>
+                            <input type="text" id="name" name="name" value=" <?=$data["nama_tim"]?>" readonly>
+                            <?php
+                                }
+                            ?>
 
+                            <label for="name">Divisi</label>
+                            <?php 
+                                if($data["divisi"]!=null){ 
+                            
+                            ?>
+                            <input type="text" id="telp" name="telp" value=<?= $data["divisi"]?> readonly>
+                            <?php
+                                }
+                            ?>
+
+                    <?php
+                    if ($data["buktiPembayaran"] != null) :
+                    ?>
+                        <img src="<?php echo $data["buktiPembayaran"]; ?>" class="my-2 w-100 h-50 img-upload">
+
+                        <label class="" for="gambar">Upload Bukti Pembayaran</label>
+                        <div class="input-group">
+                            <input type="hidden" name="id" value="<?=$id?>">
+                            <input type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg" disabled>
+                        </div>
+
+
+                    <?php
+                    else :
+                    ?>
+                        <label class="" for="gambar">Upload Bukti Pembayaran</label>
+                        <div class="input-group">
+                            <input type="hidden" name="id" value="<?=$id?>">
+                            <input required type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg" disabled>
+                        </div>
+                    <?php
+                    endif
+                    ?>
+                    
+                    
+                    <?php
+                    if ($data["karya"] != null) :
+                    ?>
+                        <img src="<?php echo $data["karya"]; ?>" class="my-2 w-100 h-50 img-upload">
+
+                        <label class="" for="gambar">Upload Karya</label>
+                        <div class="input-group">
+                            <input type="hidden" name="id" value="<?=$id?>">
+                            <input type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg" disabled>
+                        </div>
+
+
+                    <?php
+                    else :
+                    ?>
+                        <label class="" for="gambar">Upload Karya</label>
+                        <div class="input-group">
+                            <input type="hidden" name="id" value="<?=$id?>">
+                            <input required type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg" disabled>
+                        </div>
+                    <?php
+                    endif
+                    ?>
                 <?php
-                if ($data["buktiPembayaran"] != null) :
+                    }else{
                 ?>
-                    <img src="<?php echo $data["buktiPembayaran"]; ?>" class="my-2 w-100 h-50 img-upload">
+                            <label for="name">Atas Nama</label> 
+                            <?php 
+                                if($data["nama_tim"]!=null){ 
+                            
+                            ?>
+                            <input type="text" id="name" name="name" value=" <?=$data["nama_tim"]?>" readonly>
+                            <?php
+                                }
+                            ?>
 
-                    <label class="" for="gambar">Upload Bukti Pembayaran</label>
-                    <div class="input-group">
-                        <input type="hidden" name="id" value="<?=$id?>">
-                        <input type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
-                    </div>
+                            <label for="name">Divisi</label>
+                            <?php 
+                                if($data["divisi"]!=null){ 
+                            
+                            ?>
+                            <input type="text" id="telp" name="telp" value=<?= $data["divisi"]?> readonly>
+                            <?php
+                                }
+                            ?>
+
+                    <?php
+                    if ($data["buktiPembayaran"] != null) :
+                    ?>
+                        <img src="<?php echo $data["buktiPembayaran"]; ?>" class="my-2 w-100 h-50 img-upload">
+
+                        <label class="" for="gambar">Upload Bukti Pembayaran</label>
+                        <div class="input-group">
+                            <input type="hidden" name="id" value="<?=$id?>">
+                            <input type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
+                        </div>
 
 
+                    <?php
+                    else :
+                    ?>
+                        <label class="" for="gambar">Upload Bukti Pembayaran</label>
+                        <div class="input-group">
+                            <input type="hidden" name="id" value="<?=$id?>">
+                            <input required type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
+                        </div>
+                    <?php
+                    endif
+                    ?>
+                    
+                    
+                    <?php
+                    if ($data["karya"] != null) :
+                    ?>
+                        <img src="<?php echo $data["karya"]; ?>" class="my-2 w-100 h-50 img-upload">
+
+                        <label class="" for="gambar">Upload Karya</label>
+                        <div class="input-group">
+                            <input type="hidden" name="id" value="<?=$id?>">
+                            <input type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
+                        </div>
+
+
+                    <?php
+                    else :
+                    ?>
+                        <label class="" for="gambar">Upload Karya</label>
+                        <div class="input-group">
+                            <input type="hidden" name="id" value="<?=$id?>">
+                            <input required type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
+                        </div>
+                    <?php
+                    endif
+                    ?>
                 <?php
-                else :
+                    }
                 ?>
-                    <label class="" for="gambar">Upload Bukti Pembayaran</label>
-                    <div class="input-group">
-                        <input type="hidden" name="id" value="<?=$id?>">
-                        <input required type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
-                    </div>
-                <?php
-                endif
-                ?>
-                
-                
-                <?php
-                if ($data["karya"] != null) :
-                ?>
-                    <img src="<?php echo $data["karya"]; ?>" class="my-2 w-100 h-50 img-upload">
-
-                    <label class="" for="gambar">Upload Karya</label>
-                    <div class="input-group">
-                        <input type="hidden" name="id" value="<?=$id?>">
-                        <input type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
-                    </div>
-
-
-                <?php
-                else :
-                ?>
-                    <label class="" for="gambar">Upload Karya</label>
-                    <div class="input-group">
-                        <input type="hidden" name="id" value="<?=$id?>">
-                        <input required type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
-                    </div>
-                <?php
-                endif
-                ?>
-                
                     </fieldset>
+                <?php
+                    if($data["statusPembayaran"]==2){
+                ?>
+                    <button type="submit" disabled>Kirim</button>
 
+                <?php   
+                    }else{
+                ?>
                     <button type="submit">Kirim</button>
+                <?php
+                    }
+                ?>
 
                 </form>
             </div>
