@@ -131,7 +131,7 @@
                                                                     <input type="text" name="namaTim" class="form-control"
                                                                         value="<?php echo $i['nama_tim']; ?>" readonly>
                                                                 </div>
-                                                                <div class="form-group">
+                                                                <div class="form-group mb-5">
                                                                     <label for="exampleFormControlInput1">Nama Pendaftar</label>
                                                                     <input type="text" name="nama" class="form-control"
                                                                         value="<?php echo $i['nama']; ?>" readonly>
@@ -148,7 +148,7 @@
                                                                     <input type="text" name="nama" class="form-control"
                                                                         value="<?=$getAnggota['nama']?>" readonly>
                                                                   </div>
-                                                                  <div class="form-group">
+                                                                  <div class="form-group mb-5">
                                                                     <?php if($div == 'ml' || $div == 'ML' ){ ?>
                                                                       <label for="exampleFormControlInput1">Username <?=$g?></label>
                                                                       <input type="text" name="nama" class="form-control py-3"

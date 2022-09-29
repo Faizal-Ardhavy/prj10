@@ -2119,3 +2119,7 @@ print and (-ms-high-contrast:none) {
         grid-template-columns: repeat(4, minmax(0, 1fr))
     }
 }
+
+.btn-bayar{
+    background-color: #f3bd00;
+}
