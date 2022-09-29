@@ -154,6 +154,29 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                             <input type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
                         </div>
 
+                            <?php
+                            if ($data["karya"] != null) :
+                            ?>
+                                <img src="<?php echo $data["karya"]; ?>" class="my-2 w-100 h-50 img-upload">
+
+                                <label class="" for="gambar">Upload Karya</label>
+                                <div class="input-group">
+                                    <input type="hidden" name="id" value="<?=$id?>">
+                                    <input type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
+                                </div>
+
+
+                            <?php
+                            else :
+                            ?>
+                                <label class="" for="gambar">Upload Karya</label>
+                                <div class="input-group">
+                                    <input type="hidden" name="id" value="<?=$id?>">
+                                    <input required type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
+                                </div>
+                            <?php
+                            endif
+                            ?>
 
                     <?php
                     else :
@@ -168,29 +191,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                     ?>
                     
                     
-                    <?php
-                    if ($data["karya"] != null) :
-                    ?>
-                        <img src="<?php echo $data["karya"]; ?>" class="my-2 w-100 h-50 img-upload">
-
-                        <label class="" for="gambar">Upload Karya</label>
-                        <div class="input-group">
-                            <input type="hidden" name="id" value="<?=$id?>">
-                            <input type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
-                        </div>
-
-
-                    <?php
-                    else :
-                    ?>
-                        <label class="" for="gambar">Upload Karya</label>
-                        <div class="input-group">
-                            <input type="hidden" name="id" value="<?=$id?>">
-                            <input required type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
-                        </div>
-                    <?php
-                    endif
-                    ?>
+                    
                 <?php
                     }
                 ?>
