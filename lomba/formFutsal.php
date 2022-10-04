@@ -50,11 +50,11 @@
                             if($data["nama"]!=null){ 
                         
                         ?>
-                        <input type="text" id="name1" name="name1" value="<?= $data["nama"]?>">
+                        <input required type="text" id="name1" name="name1" value="<?= $data["nama"]?>">
                         <?php
                             }else{
                         ?>
-                        <input type="text" id="name1" name="name" 1>
+                        <input required type="text" id="name1" name="name" 1>
                         <?php
                             }
                         ?>
@@ -64,11 +64,11 @@
                             if($data["telpon"]!=null){ 
                         
                         ?>
-                        <input type="number" id="telp1" name="telp1" value=<?= $data["telpon"]?>>
+                        <input required type="number" id="telp1" name="telp1" value=<?= $data["telpon"]?>>
                         <?php
                             }else{
                         ?>
-                        <input type="number" id="telp1" name="telp1">
+                        <input required type="number" id="telp1" name="telp1">
                         <?php
                             }
                         ?>
@@ -78,11 +78,11 @@
                             if($data["birth"]!=null){ 
                         
                         ?>
-                        <input type="date" id="birth1" name="birth1" value="<?=$data["birth"]?>">
+                        <input required type="date" id="birth1" name="birth1" value="<?=$data["birth"]?>">
                         <?php
                             }else{
                         ?>
-                        <input type="date" id="birth1" name="birth1">
+                        <input required type="date" id="birth1" name="birth1">
                         <?php
                             }
                         ?>
@@ -96,13 +96,13 @@
                         <legend><span class="number">2</span> Profil Anggota 2</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name2" name="name2">
+                        <input required type="text" id="name2" name="name2">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp2" name="telp2">
+                        <input required type="number" id="telp2" name="telp2">
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth2" name="birth2">
+                        <input required type="date" id="birth2" name="birth2">
 
                         <label for="gambar">Kartu Pelajar</label>
                         <div class="input-group">
@@ -114,13 +114,13 @@
                         <legend><span class="number">3</span> Profil Anggota 3</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name3" name="name3">
+                        <input required type="text" id="name3" name="name3">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp3" name="telp3">
+                        <input required type="number" id="telp3" name="telp3">
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth3" name="birth3">
+                        <input required type="date" id="birth3" name="birth3">
 
                         <label for="gambar">Kartu Pelajar</label>
                         <div class="input-group">
@@ -131,13 +131,13 @@
                         <legend><span class="number">4</span> Profil Anggota 4</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name4" name="name4">
+                        <input required type="text" id="name4" name="name4">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp4" name="telp4">
+                        <input required type="number" id="telp4" name="telp4">
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth4" name="birth4">
+                        <input required type="date" id="birth4" name="birth4">
 
                         <label for="gambar">Kartu Pelajar</label>
                         <div class="input-group">
@@ -148,13 +148,13 @@
                         <legend><span class="number">5</span> Profil Anggota 5</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name5" name="name5">
+                        <input required type="text" id="name5" name="name5">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp5" name="telp5">
+                        <input required type="number" id="telp5" name="telp5">
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth5" name="birth5">
+                        <input required type="date" id="birth5" name="birth5">
 
                         <label for="gambar">Kartu Pelajar</label>
                         <div class="input-group">
@@ -165,13 +165,13 @@
                         <legend><span class="number">6</span> Profil Anggota 6</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name6" name="name6">
+                        <input required type="text" id="name6" name="name6">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp6" name="telp6">
+                        <input required type="number" id="telp6" name="telp6">
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth6" name="birth6">
+                        <input required type="date" id="birth6" name="birth6">
 
                         <label for="gambar">Kartu Pelajar</label>
                         <div class="input-group">
@@ -182,13 +182,13 @@
                         <legend><span class="number">7</span> Profil Anggota 7</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name7" name="name7">
+                        <input required type="text" id="name7" name="name7">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp7" name="telp7">
+                        <input required type="number" id="telp7" name="telp7">
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth7" name="birth7">
+                        <input required type="date" id="birth7" name="birth7">
 
                         <label for="gambar">Kartu Pelajar</label>
                         <div class="input-group">
@@ -199,13 +199,13 @@
                         <legend><span class="number">8</span> Profil Anggota 8</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name8" name="name8">
+                        <input required type="text" id="name8" name="name8">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp8" name="telp8">
+                        <input required type="number" id="telp8" name="telp8">
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth8" name="birth8">
+                        <input required type="date" id="birth8" name="birth8">
 
                         <label for="gambar">Kartu Pelajar</label>
                         <div class="input-group">
@@ -216,13 +216,13 @@
                         <legend><span class="number">9</span> Profil Anggota 9</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name9" name="name9">
+                        <input required type="text" id="name9" name="name9">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp9" name="telp9">
+                        <input required type="number" id="telp9" name="telp9">
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth9" name="birth9">
+                        <input required type="date" id="birth9" name="birth9">
 
                         <label for="gambar">Kartu Pelajar</label>
                         <div class="input-group">
@@ -233,14 +233,14 @@
                         <legend><span class="number">10</span> Profil Anggota 10</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name10" name="name10">
+                        <input required type="text" id="name10" name="name10">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp10" name="telp10">
+                        <input required type="number" id="telp10" name="telp10">
 
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth10" name="birth10">
+                        <input required type="date" id="birth10" name="birth10">
 
                         <label for="gambar">Kartu Pelajar</label>
                         <div class="input-group">
@@ -251,14 +251,14 @@
                         <legend><span class="number">11</span> Profil Anggota 11</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name11" name="name11">
+                        <input required type="text" id="name11" name="name11">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp11" name="telp11">
+                        <input required type="number" id="telp11" name="telp11">
 
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth11" name="birth11">
+                        <input required type="date" id="birth11" name="birth11">
 
                         <label for="gambar">Kartu Pelajar</label>
                         <div class="input-group">
@@ -269,14 +269,14 @@
                         <legend><span class="number">12</span> Profil Anggota 12</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name12" name="name12">
+                        <input required type="text" id="name12" name="name12">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp12" name="telp12">
+                        <input required type="number" id="telp12" name="telp12">
 
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth12" name="birth12">
+                        <input required type="date" id="birth12" name="birth12">
 
                         <label for="gambar">Kartu Pelajar</label>
                         <div class="input-group">
@@ -288,19 +288,19 @@
                         <legend><span class="number">13</span> Profil Pendamping 1</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name13" name="name13">
+                        <input required type="text" id="name13" name="name13">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp13" name="telp13">
+                        <input required type="number" id="telp13" name="telp13">
 
                         
                         <legend><span class="number">14</span> Profil Pendamping 2</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name14" name="name14">
+                        <input required type="text" id="name14" name="name14">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp14" name="telp14">
+                        <input required type="number" id="telp14" name="telp14">
 
 
                         <legend><span class="number">15</span> Profil Tim</legend>
@@ -309,11 +309,11 @@
                                 if($data["email"]!=null){ 
                             
                             ?>
-                        <input type="email" id="username" name="username" value=<?= $data["email"] ?>>
+                        <input required type="email" id="username" name="username" value=<?= $data["email"] ?>>
                         <?php
                                 }else{
                             ?>
-                        <input type="email" id="username" name="username">
+                        <input required type="email" id="username" name="username">
                         <?php
                                 }
                             ?>
@@ -322,33 +322,33 @@
                         <?php 
                             if($data["instansi"]!=null){ 
                         ?>
-                        <input type="text" id="school" name="school" value="<?= $data["instansi"]?>">
+                        <input required type="text" id="school" name="school" value="<?= $data["instansi"]?>">
                         <?php
                         }else{
                         ?>
-                        <input type="text" id="school" name="school">
+                        <input required type="text" id="school" name="school">
 
                         <?php
                             }
                         ?>
 
                         <label for="name">Nama Tim</label>
-                        <input type="text" id="namaTim" name="namaTim">
+                        <input required type="text" id="namaTim" name="namaTim">
 
                     </fieldset>
                     <fieldset>
                         <!-- <legend><span class="number">2</span> Profil Anggota</legend>
 
                         <label for="name_member_1">Nama Anggota 1</label>
-                        <input type="text" id="name_member_1" name="name_member_1">
+                        <input required type="text" id="name_member_1" name="name_member_1">
 
                         <label for="name_member_2">Nama Anggota 2</label>
-                        <input type="text" id="name_member_2" name="name_member_2">
+                        <input required type="text" id="name_member_2" name="name_member_2">
 
                         <legend><span class="number">4</span> Profil Tim</legend>
 
                         <label for="school">Asal Sekolah</label>
-                        <input type="text" id="school" name="school"> -->
+                        <input required type="text" id="school" name="school"> -->
 
 
                         <!-- <label for="job">Job Role:</label>
@@ -373,11 +373,11 @@
                         </select> -->
 
                         <!-- <label>Interests:</label>
-                        <input type="checkbox" id="development" value="interest_development" name="user_interest"><label
+                        <input required type="checkbox" id="development" value="interest_development" name="user_interest"><label
                             class="light" for="development">Development</label><br>
-                        <input type="checkbox" id="design" value="interest_design" name="user_interest"><label
+                        <input required type="checkbox" id="design" value="interest_design" name="user_interest"><label
                             class="light" for="design">Design</label><br>
-                        <input type="checkbox" id="business" value="interest_business" name="user_interest"><label
+                        <input required type="checkbox" id="business" value="interest_business" name="user_interest"><label
                             class="light" for="business">Business</label> -->
 
                     </fieldset>

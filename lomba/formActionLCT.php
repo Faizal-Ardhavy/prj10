@@ -5,20 +5,31 @@
     $instansi = $_POST["school"];
     $id_pendaftaran =insert_pendaftaran($namaTim, $instansi, $mail, 'LCT',$_SESSION["id"]);
     
-    for($i = 1; $i<=3; $i++){
-        $nama= $_POST["name".strval($i)];
-        $telpon = $_POST["telp".strval($i)];
-        $birth = $_POST["birth".strval($i)];
-
-        $filename = $_FILES["gambar".strval($i)]["name"];
-        $tempname = $_FILES["gambar".strval($i)]["tmp_name"];
-        $folder = "../img/" . $filename;
-        // Now let's move the uploaded image into 
-        move_uploaded_file($tempname, $folder);
+    for($i = 1; $i<=4; $i++){
         
-        insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran, $instansi);
-        update_identitas($folder, $nama);
+        if($i==4){
+            $nama= $_POST["name".strval($i)];
+            $telpon = $_POST["telp".strval($i)];
+            $birth = $_POST["birth".strval($i)];
+            
+            insert_anggota($nama, "", $telpon, "", $id_pendaftaran, "");
+            update_identitas("", $nama);
+        }else{
+            $nama= $_POST["name".strval($i)];
+            $telpon = $_POST["telp".strval($i)];
+            $birth = $_POST["birth".strval($i)];
+    
+            $filename = $_FILES["gambar".strval($i)]["name"];
+            $tempname = $_FILES["gambar".strval($i)]["tmp_name"];
+            $folder = "../img/" . $filename;
+            // Now let's move the uploaded image into 
+            move_uploaded_file($tempname, $folder);
+            
+            insert_anggota($nama, $mail, $telpon, $birth, $id_pendaftaran, $instansi);
+            update_identitas($folder, $nama);
+        }
     }
+
 
     // $nama = $_POST["name"];
     // $telpon = $_POST["telp"];

@@ -39,11 +39,11 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                 <?php
                 if ($data["email"] != null) :
                 ?>
-                    <input type="email" id="username" name="username" value=<?= $data["email"] ?>>
+                    <input required type="email" id="username" name="username" value=<?= $data["email"] ?>>
                 <?php
                 else :
                 ?>
-                    <input type="email" id="username" name="username">
+                    <input required type="email" id="username" name="username">
                 <?php
                 endif
                 ?>
@@ -53,11 +53,11 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                 if ($data["nama"] != null) :
 
                 ?>
-                    <input type="text" id="name" name="name" value="<?= $data["nama"] ?>">
+                    <input required type="text" id="name" name="name" value="<?= $data["nama"] ?>">
                 <?php
                 else :
                 ?>
-                    <input type="text" id="name" name="name">
+                    <input required type="text" id="name" name="name">
                 <?php
                 endif
                 ?>
@@ -67,11 +67,11 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                 if ($data["telpon"] != null) :
 
                 ?>
-                    <input type="number" id="telp" name="telp" value=<?= $data["telpon"] ?>>
+                    <input required type="number" id="telp" name="telp" value=<?= $data["telpon"] ?>>
                 <?php
                 else :
                 ?>
-                    <input type="text" id="telp" name="telp">
+                    <input required type="text" id="telp" name="telp">
                 <?php
                 endif
                 ?>
@@ -81,11 +81,11 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                 if ($data["birth"] != null) :
 
                 ?>
-                    <input type="date" id="birth" name="birth" value="<?= $data["birth"] ?>">
+                    <input required type="date" id="birth" name="birth" value="<?= $data["birth"] ?>">
                 <?php
                 else :
                 ?>
-                    <input type="date" id="birth" name="birth">
+                    <input required type="date" id="birth" name="birth">
                 <?php
                 endif
                 ?>
@@ -94,12 +94,12 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                 <?php
                 if ($data["instansi"] != null) :
                 ?>
-                    <input type="text" id="school" name="school" value="<?= $data["instansi"] ?>">
+                    <input required type="text" id="school" name="school" value="<?= $data["instansi"] ?>">
 
                 <?php
                 else :
                 ?>
-                    <input type="text" id="school" name="school">
+                    <input required type="text" id="school" name="school">
 
                 <?php
                 endif
@@ -145,7 +145,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
 
                     <label class="" for="gambar">Upload Foto Formal (max. 2MB)</label>
                     <div class="input-group">
-                        <input type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg" value=<?= $data["foto"] ?>>
+                        <input required type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg" value=<?= $data["foto"] ?>>
                     </div>
 
 

@@ -123,17 +123,17 @@
                                                             <form method="POST">
                                                                 <div class="form-group">
                                                                     <label for="exampleFormControlInput1">Divisi</label>
-                                                                    <input type="text" class="form-control"
+                                                                    <input required type="text" class="form-control"
                                                                         value="<?php echo $i['divisi']; ?>" name="divisi" readonly>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="exampleFormControlTextarea1">Nama Tim</label>
-                                                                    <input type="text" name="namaTim" class="form-control"
+                                                                    <input required type="text" name="namaTim" class="form-control"
                                                                         value="<?php echo $i['nama_tim']; ?>" readonly>
                                                                 </div>
                                                                 <div class="form-group mb-5">
                                                                     <label for="exampleFormControlInput1">Nama Pendaftar</label>
-                                                                    <input type="text" name="nama" class="form-control"
+                                                                    <input required type="text" name="nama" class="form-control"
                                                                         value="<?php echo $i['nama']; ?>" readonly>
                                                                 </div>
                                                                 <?php 
@@ -145,13 +145,13 @@
                                                                   ?>
                                                                   <div class="form-group">
                                                                     <label for="exampleFormControlInput1">Anggota <?=$g?></label>
-                                                                    <input type="text" name="nama" class="form-control"
+                                                                    <input required type="text" name="nama" class="form-control"
                                                                         value="<?=$getAnggota['nama']?>" readonly>
                                                                   </div>
                                                                   <div class="form-group mb-5">
                                                                     <?php if($div == 'ml' || $div == 'ML' ){ ?>
                                                                       <label for="exampleFormControlInput1">Username <?=$g?></label>
-                                                                      <input type="text" name="nama" class="form-control py-3"
+                                                                      <input required type="text" name="nama" class="form-control py-3"
                                                                         value="<?=$getAnggota['bukti_identitas']?>" readonly>
                                                                     <?php }else{ ?>
                                                                       <img class="py-3" width="300" height="300" src="../img/<?=$imgg?>">
@@ -217,11 +217,11 @@
             <main class="form-signin w-100 m-auto">
               <form method="POST">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="example" name="username" required>
+                  <input required type="text" class="form-control" id="floatingInput" placeholder="example" name="username" required>
                   <label for="floatingInput">username</label>
                 </div>
                 <div class="form-floating">
-                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
+                  <input required type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
                   <label for="floatingPassword">Password</label>
                 </div>
             <?php 

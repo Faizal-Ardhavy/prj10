@@ -50,11 +50,11 @@
                             if($data["nama"]!=null){ 
                         
                         ?>
-                        <input type="text" id="name" name="name" value="<?= $data["nama"]?>">
+                        <input required type="text" id="name" name="name" value="<?= $data["nama"]?>">
                         <?php
                             }else{
                         ?>
-                        <input type="text" id="name" name="name">
+                        <input required type="text" id="name" name="name">
                         <?php
                             }
                         ?>
@@ -64,11 +64,11 @@
                             if($data["telpon"]!=null){ 
                         
                         ?>
-                        <input type="number" id="telp" name="telp" value=<?= $data["telpon"]?>>
+                        <input required type="number" id="telp" name="telp" value=<?= $data["telpon"]?>>
                         <?php
                             }else{
                         ?>
-                        <input type="number" id="telp" name="telp">
+                        <input required type="number" id="telp" name="telp">
                         <?php
                             }
                         ?>
@@ -77,11 +77,11 @@
                         <?php 
                             if($data["instansi"]!=null){ 
                         ?>
-                        <input type="text" id="school" name="school" value="<?= $data["instansi"]?>">
+                        <input required type="text" id="school" name="school" value="<?= $data["instansi"]?>">
                         <?php
                         }else{
                         ?>
-                        <input type="text" id="school" name="school">
+                        <input required type="text" id="school" name="school">
 
                         <?php
                             }
@@ -91,11 +91,11 @@
                             if($data["birth"]!=null){ 
                         
                         ?>
-                        <input type="date" id="birth" name="birth" value="<?=$data["birth"]?>">
+                        <input required type="date" id="birth" name="birth" value="<?=$data["birth"]?>">
                         <?php
                             }else{
                         ?>
-                        <input type="date" id="birth" name="birth">
+                        <input required type="date" id="birth" name="birth">
                         <?php
                             }
                         ?>
@@ -108,17 +108,17 @@
                         <legend><span class="number">2</span> Profil Anggota 2</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <input type="text" id="name2" name="name2">
+                        <input required type="text" id="name2" name="name2">
 
                         <label for="name">No.Telpon</label>
-                        <input type="number" id="telp2" name="telp2">
+                        <input required type="number" id="telp2" name="telp2">
 
 
                         <label for="school">Instansi</label>
-                        <input type="text" id="school2" name="school2">
+                        <input required type="text" id="school2" name="school2">
 
                         <label for="birth">Tanggal lahir</label>
-                        <input type="date" id="birth2" name="birth2">
+                        <input required type="date" id="birth2" name="birth2">
                         <div class="input-group">
                             <input required type="file" class="form-control mb-3" id="gambar2" name="gambar2"
                                 accept="image/x-png,image/gif,image/jpeg">
@@ -131,32 +131,32 @@
                                 if($data["email"]!=null){ 
                             
                             ?>
-                        <input type="email" id="username" name="username" value=<?= $data["email"] ?>>
+                        <input required type="email" id="username" name="username" value=<?= $data["email"] ?>>
                         <?php
                                 }else{
                             ?>
-                        <input type="email" id="username" name="username">
+                        <input required type="email" id="username" name="username">
                         <?php
                                 }
                             ?>
 
                         <label for="name">Nama Tim</label>
-                        <input type="text" id="namaTim" name="namaTim">
+                        <input required type="text" id="namaTim" name="namaTim">
 
                     </fieldset>
                     <fieldset>
                         <!-- <legend><span class="number">2</span> Profil Anggota</legend>
 
                         <label for="name_member_1">Nama Anggota 1</label>
-                        <input type="text" id="name_member_1" name="name_member_1">
+                        <input required type="text" id="name_member_1" name="name_member_1">
 
                         <label for="name_member_2">Nama Anggota 2</label>
-                        <input type="text" id="name_member_2" name="name_member_2">
+                        <input required type="text" id="name_member_2" name="name_member_2">
 
                         <legend><span class="number">4</span> Profil Tim</legend>
 
                         <label for="school">Asal Sekolah</label>
-                        <input type="text" id="school" name="school"> -->
+                        <input required type="text" id="school" name="school"> -->
 
 
                         <!-- <label for="job">Job Role:</label>
@@ -181,11 +181,11 @@
                         </select> -->
 
                         <!-- <label>Interests:</label>
-                        <input type="checkbox" id="development" value="interest_development" name="user_interest"><label
+                        <input required type="checkbox" id="development" value="interest_development" name="user_interest"><label
                             class="light" for="development">Development</label><br>
-                        <input type="checkbox" id="design" value="interest_design" name="user_interest"><label
+                        <input required type="checkbox" id="design" value="interest_design" name="user_interest"><label
                             class="light" for="design">Design</label><br>
-                        <input type="checkbox" id="business" value="interest_business" name="user_interest"><label
+                        <input required type="checkbox" id="business" value="interest_business" name="user_interest"><label
                             class="light" for="business">Business</label> -->
 
                     </fieldset>

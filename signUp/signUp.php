@@ -31,19 +31,19 @@ require "../function.php";
                     <legend><span class="number">1</span> Profil</legend>
 
                     <label for="name">Email</label>
-                    <input type="email" id="username" name="username">
+                    <input required type="email" id="username" name="username">
 
                     <label for="name">Nama Lengkap</label>
-                    <input type="text" id="name" name="name">
+                    <input required type="text" id="name" name="name">
 
                     <label for="telpon">No.Telpon</label>
-                    <input type="number" id="telp" name="telp">
+                    <input required type="number" id="telp" name="telp">
 
                     <label for="school">Instansi</label>
-                    <input type="text" id="school" name="school">
+                    <input required type="text" id="school" name="school">
 
                     <label for="password">Password</label>
-                    <input type="password" id="pass" name="pass">
+                    <input required type="password" id="pass" name="pass">
 
 
                 </fieldset>

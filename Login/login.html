@@ -30,11 +30,11 @@
               <form action="loginAction" method="post">
                 <div class="form-group">
                   <label for="email" class="sr-only">Email</label>
-                  <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
+                  <input required type="email" name="email" id="email" class="form-control" placeholder="Email address">
                 </div>
                 <div class="form-group mb-4">
                   <label for="password" class="sr-only">Password</label>
-                  <input type="password" name="password" id="password" class="form-control" placeholder="***********">
+                  <input required type="password" name="password" id="password" class="form-control" placeholder="***********">
                 </div>
                 <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
               </form>
@@ -52,15 +52,15 @@
           <form action="#!">
             <div class="form-group">
               <label for="email" class="sr-only">Email</label>
-              <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+              <input required type="email" name="email" id="email" class="form-control" placeholder="Email">
             </div>
             <div class="form-group">
               <label for="password" class="sr-only">Password</label>
-              <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+              <input required type="password" name="password" id="password" class="form-control" placeholder="Password">
             </div>
             <div class="form-prompt-wrapper">
               <div class="custom-control custom-checkbox login-card-check-box">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <input required type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label" for="customCheck1">Remember me</label>
               </div>              
               <a href="#!" class="text-reset">Forgot password?</a>

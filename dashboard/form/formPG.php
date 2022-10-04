@@ -57,7 +57,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                                 if($data["nama_tim"]!=null){ 
                             
                             ?>
-                            <input type="text" id="name" name="name" value=" <?=$data["nama_tim"]?>" readonly>
+                            <input required type="text" id="name" name="name" value=" <?=$data["nama_tim"]?>" readonly>
                             <?php
                                 }
                             ?>
@@ -67,7 +67,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                                 if($data["divisi"]!=null){ 
                             
                             ?>
-                            <input type="text" id="telp" name="telp" value=<?= $data["divisi"]?> readonly>
+                            <input required type="text" id="telp" name="telp" value=<?= $data["divisi"]?> readonly>
                             <?php
                                 }
                             ?>
@@ -80,7 +80,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                         <label class="" for="gambar">Upload Bukti Pembayaran</label>
                         <div class="input-group">
                             <input type="hidden" name="id" value="<?=$id?>">
-                            <input type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg" disabled>
+                            <input required type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg" disabled>
                         </div>
 
 
@@ -105,7 +105,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                         <label class="" for="gambar">Upload Karya</label>
                         <div class="input-group">
                             <input type="hidden" name="id" value="<?=$id?>">
-                            <input type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg" disabled>
+                            <input required type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg" disabled>
                         </div>
 
 
@@ -128,7 +128,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                                 if($data["nama_tim"]!=null){ 
                             
                             ?>
-                            <input type="text" id="name" name="name" value=" <?=$data["nama_tim"]?>" readonly>
+                            <input required type="text" id="name" name="name" value=" <?=$data["nama_tim"]?>" readonly>
                             <?php
                                 }
                             ?>
@@ -138,7 +138,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                                 if($data["divisi"]!=null){ 
                             
                             ?>
-                            <input type="text" id="telp" name="telp" value=<?= $data["divisi"]?> readonly>
+                            <input required type="text" id="telp" name="telp" value=<?= $data["divisi"]?> readonly>
                             <?php
                                 }
                             ?>
@@ -151,7 +151,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                         <label class="" for="gambar">Upload Bukti Pembayaran</label>
                         <div class="input-group">
                             <input type="hidden" name="id" value="<?=$id?>">
-                            <input type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
+                            <input required type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
                         </div>
 
                             <?php
@@ -162,7 +162,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                                 <label class="" for="gambar">Upload Karya</label>
                                 <div class="input-group">
                                     <input type="hidden" name="id" value="<?=$id?>">
-                                    <input type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
+                                    <input required type="file" class="form-control mb-3" id="karya" name="karya" accept="image/x-png,image/gif,image/jpeg">
                                 </div>
 
 
