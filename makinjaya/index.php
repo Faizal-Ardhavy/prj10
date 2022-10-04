@@ -110,7 +110,7 @@
                                                 data-target="#modal<?=$i['id']; ?>">Edit</a>
                                             <div class="modal fade" id="modal<?=$i['id']; ?>" tabindex="-1"
                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog">
+                                                <div class="modal-dialog modal-lg">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
@@ -123,19 +123,20 @@
                                                             <form method="POST">
                                                                 <div class="form-group">
                                                                     <label for="exampleFormControlInput1">Divisi</label>
-                                                                    <input required type="text" class="form-control"
+                                                                    <input type="text" class="form-control"
                                                                         value="<?php echo $i['divisi']; ?>" name="divisi" readonly>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="exampleFormControlTextarea1">Nama Tim</label>
-                                                                    <input required type="text" name="namaTim" class="form-control"
+                                                                    <input type="text" name="namaTim" class="form-control"
                                                                         value="<?php echo $i['nama_tim']; ?>" readonly>
                                                                 </div>
                                                                 <div class="form-group mb-5">
                                                                     <label for="exampleFormControlInput1">Nama Pendaftar</label>
-                                                                    <input required type="text" name="nama" class="form-control"
+                                                                    <input type="text" name="nama" class="form-control"
                                                                         value="<?php echo $i['nama']; ?>" readonly>
                                                                 </div>
+
                                                                 <?php 
                                                                 $iid =$i['id'];
                                                                 $g=1;
@@ -143,20 +144,43 @@
                                                                 while($getAnggota = mysqli_fetch_array($que)){
                                                                   $imgg = preg_replace('/^..\/..\/...\//i', '', $getAnggota['bukti_identitas']);
                                                                   ?>
+
                                                                   <div class="form-group">
-                                                                    <label for="exampleFormControlInput1">Anggota <?=$g?></label>
-                                                                    <input required type="text" name="nama" class="form-control"
-                                                                        value="<?=$getAnggota['nama']?>" readonly>
+                                                                    <div>
+                                                                      <label for="exampleFormControlInput1">
+                                                                        <?php
+                                                                        if ($g<13) {
+                                                                          echo "Anggota";
+                                                                        }else{
+                                                                          echo "Pendamping";
+                                                                        }
+                                                                        ?>
+                                                                        
+                                                                      </label>
+                                                                      <input type="text" name="nama" class="form-control"
+                                                                          value="<?=$getAnggota['nama']?>" readonly>
+                                                                    </div>
+                                                                  </div>
+                                                                  
+                                                                  <div class="form-group">
+                                                                    <div>
+                                                                      <label for="exampleFormControlInput1">Nomor Handphone <?=$g?></label>
+                                                                      <input type="number" name="nohp" class="form-control"
+                                                                          value="<?=$getAnggota['no_hp']?>" readonly>
+                                                                    </div>
                                                                   </div>
                                                                   <div class="form-group mb-5">
                                                                     <?php if($div == 'ml' || $div == 'ML' ){ ?>
                                                                       <label for="exampleFormControlInput1">Username <?=$g?></label>
-                                                                      <input required type="text" name="nama" class="form-control py-3"
+                                                                      <input type="text" name="nama" class="form-control py-3"
                                                                         value="<?=$getAnggota['bukti_identitas']?>" readonly>
+                                                                    <?php }else if($div == 'futsal' || $div == 'FUTSAL' || $div == 'lct' || $div == 'LCT' and $getAnggota['birth']=="0000-00-00"){ ?>
+                                                                    
                                                                     <?php }else{ ?>
-                                                                      <img class="py-3" width="300" height="300" src="../img/<?=$imgg?>">
+                                                                      <img class="py-3" width="200" height="300" src="../img/<?=$imgg?>">
                                                                     <?php } ?>
                                                                   </div>
+
                                                                 <?php $g++; }?>
                                                                 <div class="form-group">
                                                                     <label for="exampleFormControlInput1">Status Pembayaran</label>
@@ -198,7 +222,6 @@
               </div>
             </div>
         </section>
-
 	<?Php }else{?>
     <!DOCTYPE html>
       <html lang="en">
@@ -217,11 +240,11 @@
             <main class="form-signin w-100 m-auto">
               <form method="POST">
                 <div class="form-floating">
-                  <input required type="text" class="form-control" id="floatingInput" placeholder="example" name="username" required>
+                  <input type="text" class="form-control" id="floatingInput" placeholder="example" name="username" required>
                   <label for="floatingInput">username</label>
                 </div>
                 <div class="form-floating">
-                  <input required type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" required>
                   <label for="floatingPassword">Password</label>
                 </div>
             <?php 
@@ -244,8 +267,10 @@
                 <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
                </form>
             </main>
-          </body>
 <?php } ?>
  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+ </body>
 </html>
