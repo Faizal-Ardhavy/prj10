@@ -323,6 +323,7 @@ require "function.php";
                         </div>
                     </div>
                 </div>
+            </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
