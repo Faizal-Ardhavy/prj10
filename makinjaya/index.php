@@ -149,10 +149,10 @@
                                                                     <div>
                                                                       <label for="exampleFormControlInput1">
                                                                         <?php
-                                                                        if ($g<13) {
-                                                                          echo "Anggota";
-                                                                        }else{
+                                                                        if ($g>=13||($i["divisi"]==("lct"||"LCT")&&$g>=4)){
                                                                           echo "Pendamping";
+                                                                        }else{
+                                                                          echo "Anggota";
                                                                         }
                                                                         ?>
                                                                         

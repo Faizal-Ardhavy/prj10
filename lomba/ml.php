@@ -129,7 +129,7 @@
                                 <a class="btn btn-primary py-3 px-5" href="formML.php">Daftar</a>
                             </div>
                             <div class="col-sm-6">
-                                <a class="d-inline-flex align-items-center btn btn-outline-primary border-2 p-2" href="#">
+                                <a class="d-inline-flex align-items-center btn btn-outline-primary border-2 p-2" href="https://bit.ly/JUKNISPRJXHT">
                                     <span class="flex-shrink-0 btn-square bg-primary">
                                         <i class="fa fa-book text-white"></i>
                                     </span>
