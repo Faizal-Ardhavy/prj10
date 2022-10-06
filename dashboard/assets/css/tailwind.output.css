@@ -715,6 +715,12 @@ print and (-ms-high-contrast:none) {
     background-color: rgba(243, 189, 0, var(--bg-opacity))
 }
 
+.bg-yellow-300 {
+    --bg-opacity: 1;
+    background-color: #ffe37d;
+    background-color: rgba(255, 227, 125, var(--bg-opacity))
+}
+
 .hover\:bg-gray-100:hover {
     --bg-opacity: 1;
     background-color: #f4f5f7;
@@ -1111,6 +1117,10 @@ print and (-ms-high-contrast:none) {
 
 .h-screen {
     height: 100vh
+}
+
+.text-s {
+    font-size: 1rem
 }
 
 .text-xs {
@@ -2120,6 +2130,16 @@ print and (-ms-high-contrast:none) {
     }
 }
 
-.btn-bayar{
+/* .btn-bayar{
+    background-color: #ffe37d;
+    color: #c37004;
+} */
+
+.btn-bayar:hover{
+    --bg-opacity: 1;
     background-color: #f3bd00;
+    background-color: rgba(243, 189, 0, var(--bg-opacity));
+    color: #fff;
+    color: rgba(255, 255, 255, var(--text-opacity));
+    cursor: pointer;
 }

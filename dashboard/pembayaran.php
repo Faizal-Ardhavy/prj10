@@ -271,7 +271,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                         ?>
                         <form action=<?= $link ?> method="post">
                           <input type="hidden" name="id" value="<?= $data["id"] ?>">
-                          <input type="submit" value="Bayar" class="btn-bayar text-xs px-2 py-1 font-semibold rounded-full">
+                          <button type="submit" class="btn-bayar text-xs px-3 py-1 font-semibold rounded-md text-orange-700 bg-yellow-300 align-baseline">Bayar  <i class="bi bi-chevron-right"></i></button>
                         </form>
                       </td>
                     </tr>
