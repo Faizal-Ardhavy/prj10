@@ -304,7 +304,7 @@
                 if($g = mysqli_fetch_array($query)){
                   $_SESSION['username'] = $username;
                   $_SESSION['divisi'] = $g['divisi'];
-                  header("Refresh:0");
+                  echo '<script> location.replace("index.php"); </script>';
                 }else{?>
                   <div>
                     <p type="button" class="btn btn-outline-danger">Invalid</p>
