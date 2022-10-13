@@ -151,7 +151,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                         <label class="" for="gambar">Upload Bukti Pembayaran</label>
                         <div class="input-group">
                             <input type="hidden" name="id" value="<?=$id?>">
-                            <input required type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
+                            <input type="file" class="form-control mb-3" id="gambar" name="gambar" accept="image/x-png,image/gif,image/jpeg">
                         </div>
 
                             <?php
