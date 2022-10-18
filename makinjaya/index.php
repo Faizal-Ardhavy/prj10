@@ -71,8 +71,8 @@
                                         $data = mysqli_query($sql, $que);
                                         $j=1;
                                             while($i = mysqli_fetch_array($data)){
-                                             $img = preg_replace('/^..\/..\/...\//i', '', $i['buktiPembayaran']);
-                                             $karya = preg_replace('/^..\/..\/...\//i', '', $i['karya']);
+                                              $img = preg_replace('/^..\/..\/...\//i', '', $i['buktiPembayaran']);
+                                              $karya = preg_replace('/^..\/..\/...\//i', '', $i['karya']);
                                             ?>
                                             <tr>
                                                 <td><?=$j?></td>
@@ -80,7 +80,13 @@
                                                 <td class="text-bold-500"><?=$i['nama_tim'];?></td>
                                                 <td class="text-bold-500"><?=$i['nama'];?></td>
                                                 <td class="text-bold-500">
-                                                  <img width="100" height="100" src="../img/<?=$img?>">
+                                                  <?php
+                                                  if ($i['buktiPembayaran'] == NULL) {?>
+                                                    <p>Belum Transfer</p>
+                                                  <?php 
+                                                  }else{?>
+                                                    <img width="100" height="100" src="../img/<?=$img?>">
+                                                  <?php } ?>
                                                 </td>
                                                 <?php if($div == "photography"){?>
                                                   <td class="text-bold-500">

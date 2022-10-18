@@ -1,7 +1,8 @@
 <?php
     require '../function.php';
+    if (!empty($_POST["namaTim"]) && !empty($_POST["username"]) && !empty($_POST["name"]) && !empty($_POST["telp"]) && !empty($_POST["school"]) && !empty($_POST["birth"]) && !empty($_FILES["gambar"]["name"])  && !empty($_POST["name2"])  && !empty($_POST["telp2"])  && !empty($_POST["school2"])  && !empty($_POST["birth2"])  && !empty($_FILES["gambar2"]["name"])) {
     $namaTim = $_POST["namaTim"];
-    $mail = $_POST["username"];
+    $mail = $_POST["birth"];
 
     $nama = $_POST["name"];
     $telpon = $_POST["telp"];
@@ -37,6 +38,12 @@
     }else{
         echo "<script>
         alert('Tidak berhasil mendaftar pada lomba, silahkan coba lagi.');
+        location.href = '../index.php';
+        </script>";
+    }
+}else{
+        echo "<script>
+        alert('Tidak berhasil mendaftar pada lomba, silahkan cek kembali form anda!.');
         location.href = '../index.php';
         </script>";
     }
