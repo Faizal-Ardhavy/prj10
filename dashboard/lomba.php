@@ -20,6 +20,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link href="../img/_Logo.png" rel="icon">
     <link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <script src="./assets/js/init-alpine.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" />
@@ -190,6 +191,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                                     <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
                                         <th class="px-4 py-3">Lomba</th>
                                         <th class="px-4 py-3">Tanggal Pendaftaran</th>
+                                        <th class="px-4 py-3">Opsi</th>
                                     </tr>
                                 </thead>
 
@@ -215,6 +217,12 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
                                             </td>
                                             <td class="px-4 py-3 text-sm">
                                                 <?= $data["date"] ?>
+                                            </td>
+                                            <td class="px-4 py-3 text-sm">
+                                                <form action="detil" method="post">
+                                                    <input type="hidden" name="id" value="<?= $data["id"] ?>">
+                                                    <button type="submit" class="btn-bayar text-xs px-3 py-1 font-semibold rounded-md text-orange-700 bg-yellow-300 align-baseline">Detil  <i class="bi bi-chevron-right"></i></button>
+                                                </form>
                                             </td>
                                         </tr>
                                     <?php

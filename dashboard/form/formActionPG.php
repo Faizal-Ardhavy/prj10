@@ -1,6 +1,9 @@
 <?php
 require '../../function.php';
     $id = $_POST["id"];
+    if($id==null){
+        header("Location: ../pembayaran.html");
+    }
     $nama = $_POST["name"];
 
     $filename1 = $_FILES["gambar"]["name"];

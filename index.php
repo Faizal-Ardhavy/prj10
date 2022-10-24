@@ -106,6 +106,7 @@ require "function.php";
     <!-- Navbar End -->
 
 
+    <h5 class="text-center my-3">Tonton video panduan memakai <strong>website PRJxHT</strong> <a href="" class="link">di sini  <i class="bi bi-arrow-right-short"></i></a></h5>
     <!-- Carousel Start -->
     <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">

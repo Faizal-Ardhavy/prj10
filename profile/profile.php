@@ -28,7 +28,7 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
 
 <body>
     <div class="d-flex flex-column">
-        <a href = "../index.php" type = "button" class="btn-back"><i class="bi bi-arrow-left-short"></i><span class="text-dark">Back</span></a>
+        <a  href="javascript:history.back()" type = "button" class="btn-back fs-5"><i class="bi bi-arrow-left-short fw-bolder"></i><span class="text-dark">Back</span></a>
 
         <form action="profileAction" method="post" enctype="multipart/form-data">
             <h1> Pendataan Peserta </h1>

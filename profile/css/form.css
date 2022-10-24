@@ -56,13 +56,11 @@
   }
 
   .btn-back{
-    font-size: 2em;
     border: none;
     background-color: transparent;
   }
 
   .btn-back span{
-    font-size: 1em;
     font-weight: 600;
   }
   

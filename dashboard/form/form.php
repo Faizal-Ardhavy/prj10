@@ -1,6 +1,9 @@
 <?php
 require "../../function.php";
 $id = $_POST["id"];
+if($id==null){
+    header("Location: ../pembayaran.html");
+}
 $queri = mysqli_query(connect("prjx"), "SELECT * FROM pendaftaran WHERE id = '$id'");
 $data = mysqli_fetch_assoc($queri);
 if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
@@ -23,6 +26,8 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
 
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -42,6 +47,8 @@ if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
 
     <body>
         <div class="row">
+        <a  href="javascript:history.back()" type = "button" class="btn-back"><i class="bi bi-arrow-left-short"></i><span class="text-dark">Back</span></a>
+
             <div class="col-md-12">
                 <form action="formAction" method="post" enctype="multipart/form-data">
                     <h1> Form Pembayaran </h1>
