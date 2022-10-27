@@ -1,12 +1,21 @@
 <?php
-    require "../function.php";
-    $id = $_SESSION["id"];
-    $queri = mysqli_query(connect("prjx"), "SELECT * FROM peserta WHERE id = '$id'");
-    $data = mysqli_fetch_assoc($queri);
-    if(!isset($_SESSION["login"])||!$_SESSION["login"]){
-        header("Location: ../login/login.html");
-    }
-    $katagori;
+require "../function.php";
+$tutup = date("Y-m-d");
+if ($tutup >= "2022-10-21") {
+    echo "
+        <script>
+            alert('Pendaftaran lomba sudah ditutup :(');
+            document.location.href = '../';
+        </script>
+    ";
+}
+$id = $_SESSION["id"];
+$queri = mysqli_query(connect("prjx"), "SELECT * FROM peserta WHERE id = '$id'");
+$data = mysqli_fetch_assoc($queri);
+if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
+    header("Location: ../login/login.html");
+}
+$katagori;
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +49,7 @@
     </head>
 
     <body>
-    <a  href="javascript:history.back()" type = "button" class="btn-back"><i class="bi bi-arrow-left-short"></i><span class="text-dark">Back</span></a>
+        <a href="javascript:history.back()" type="button" class="btn-back"><i class="bi bi-arrow-left-short"></i><span class="text-dark">Back</span></a>
         <div class="row">
             <div class="col-md-12">
                 <form>

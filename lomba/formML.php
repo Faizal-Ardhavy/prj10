@@ -1,11 +1,20 @@
 <?php
-    require "../function.php";
-    $id = $_SESSION["id"];
-    $queri = mysqli_query(connect("prjx"), "SELECT * FROM peserta WHERE id = '$id'");
-    $data = mysqli_fetch_assoc($queri);
-    if(!isset($_SESSION["login"])||!$_SESSION["login"]){
-        header("Location: ../login/login.html");
-    }
+require "../function.php";
+$tutup = date("Y-m-d");
+if ($tutup >= "2022-10-21") {
+    echo "
+        <script>
+            alert('Pendaftaran lomba sudah ditutup :(');
+            document.location.href = '../';
+        </script>
+    ";
+}
+$id = $_SESSION["id"];
+$queri = mysqli_query(connect("prjx"), "SELECT * FROM peserta WHERE id = '$id'");
+$data = mysqli_fetch_assoc($queri);
+if (!isset($_SESSION["login"]) || !$_SESSION["login"]) {
+    header("Location: ../login/login.html");
+}
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +47,7 @@
     </head>
 
     <body>
-    <a  href="javascript:history.back()" type = "button" class="btn-back"><i class="bi bi-arrow-left-short"></i><span class="text-dark">Back</span></a>
+        <a href="javascript:history.back()" type="button" class="btn-back"><i class="bi bi-arrow-left-short"></i><span class="text-dark">Back</span></a>
         <div class="row">
             <div class="col-md-12">
                 <form action="formActionML" method="post" enctype="multipart/form-data">
@@ -48,45 +57,45 @@
                         <legend><span class="number">1</span> Profil Ketua</legend>
 
                         <label for="name">Nama Lengkap</label>
-                        <?php 
-                            if($data["nama"]!=null){ 
-                        
-                        ?>
-                        <input required type="text" id="name1" name="name1" value="<?= $data["nama"]?>">
                         <?php
-                            }else{
+                        if ($data["nama"] != null) {
+
                         ?>
-                        <input required type="text" id="name1" name="name1">
+                            <input required type="text" id="name1" name="name1" value="<?= $data["nama"] ?>">
                         <?php
-                            }
+                        } else {
+                        ?>
+                            <input required type="text" id="name1" name="name1">
+                        <?php
+                        }
                         ?>
 
                         <label for="name">No.Telpon</label>
-                        <?php 
-                            if($data["telpon"]!=null){ 
-                        
-                        ?>
-                        <input required type="number" id="telp1" name="telp1" value=<?= $data["telpon"]?>>
                         <?php
-                            }else{
+                        if ($data["telpon"] != null) {
+
                         ?>
-                        <input required type="number" id="telp1" name="telp1">
+                            <input required type="number" id="telp1" name="telp1" value=<?= $data["telpon"] ?>>
                         <?php
-                            }
+                        } else {
+                        ?>
+                            <input required type="number" id="telp1" name="telp1">
+                        <?php
+                        }
                         ?>
 
                         <label for="birth">Tanggal lahir</label>
-                        <?php 
-                            if($data["birth"]!=null){ 
-                        
-                        ?>
-                        <input required type="date" required id="birth1" name="birth1" value="<?=$data["birth"]?>">
                         <?php
-                            }else{
+                        if ($data["birth"] != null) {
+
                         ?>
-                        <input required type="date" required id="birth1" name="birth1">
+                            <input required type="date" required id="birth1" name="birth1" value="<?= $data["birth"] ?>">
                         <?php
-                            }
+                        } else {
+                        ?>
+                            <input required type="date" required id="birth1" name="birth1">
+                        <?php
+                        }
                         ?>
                         <label for="birth">Akun ML</label>
                         <input required type="text" id="gambar1" name="gambar1">
@@ -187,18 +196,18 @@
 
                         <legend><span class="number">8</span> Profil Tim</legend>
                         <label for="name">Email</label>
-                        <?php 
-                                if($data["email"]!=null){ 
-                            
-                            ?>
-                        <input required type="email" id="username" name="username" value=<?= $data["email"] ?>>
                         <?php
-                                }else{
-                            ?>
-                        <input required type="email" id="username" name="username">
+                        if ($data["email"] != null) {
+
+                        ?>
+                            <input required type="email" id="username" name="username" value=<?= $data["email"] ?>>
                         <?php
-                                }
-                            ?>
+                        } else {
+                        ?>
+                            <input required type="email" id="username" name="username">
+                        <?php
+                        }
+                        ?>
 
                         <label for="name">Nama Tim</label>
                         <input required type="text" id="namaTim" name="namaTim">
