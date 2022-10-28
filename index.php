@@ -382,25 +382,24 @@ require "function.php";
 
 
     <!-- Team Start -->
-    <!-- <div class="container-xxl py-6">
+    <div class="container-xxl py-6">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h6 class="text-primary text-uppercase mb-2">Sponsor Kami</h6>
-                <h1 class="display-6 mb-4">Berikut adalah sponsor kami</h1>
+                <h1 class="display-6 mb-4">PRJ X HT Disponsori Oleh:</h1>
             </div>
-            <div class="row g-0 team-items">
+            <div class="row g-0 team-items mb-3">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/dummy.png" alt="">
+                            <img class = "img-fluid" src="lomba/img/Dicoding Logo - Black.png" alt="" >
                             <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.dicoding.com/"><i class="fa fa-globe"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.instagram.com/dicoding/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
-                            <h5 class="mt-2">Nasywa</h5>
+                            <h5 class="mt-2">Dicoding</h5>
                             <span>Sponsor</span>
                         </div>
                     </div>
@@ -408,15 +407,14 @@ require "function.php";
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/dummy.png" alt="">
+                            <img class="img-fluid" src="lomba/img/mandiri 3.png" alt="" width="1000px">
                             <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://ibank.bankmandiri.co.id/retail3/"><i class="fa fa-globe"></i></a>
+                            <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.instagram.com/bankmandiri/?hl=id"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
-                            <h5 class="mt-2">Muhammad Ega Putra Anzani</h5>
+                            <h5 class="mt-2">Livin by Mandiri</h5>
                             <span>Sponsor</span>
                         </div>
                     </div>
@@ -424,15 +422,14 @@ require "function.php";
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/dummy.png" alt="">
+                            <img class="img-fluid" src="lomba/img/mandiri 2.png" alt="">
                             <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://bankmandiri.co.id/"><i class="fa fa-globe"></i></a>
+                            <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.instagram.com/bankmandiri/?hl=id"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
-                            <h5 class="mt-2">Kayla Atsila Ivanka</h5>
+                            <h5 class="mt-2">Mandiri</h5>
                             <span>Sponsor</span>
                         </div>
                     </div>
@@ -440,7 +437,53 @@ require "function.php";
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item position-relative">
                         <div class="position-relative">
-                            <img class="img-fluid" src="img/dummy.png" alt="">
+                            <img class="img-fluid" src="lomba/img/(Kock) TirtaSport.png" alt="">
+                            <div class="team-social text-center">
+                            <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://tirtasports.com/"><i class="fa fa-globe"></i></a>
+                            <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.instagram.com/tirta_sport/?hl=id"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">TIrta Sport</h5>
+                            <span>Sponsor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-0 team-items">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class = "img-fluid" src="lomba/img/mixue 1.png" alt="" >
+                            <div class="team-social text-center">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://instagram.com/mixue_wayhalim_lampung?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">Mixue Way Halim</h5>
+                            <span>Sponsor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="lomba/img/mixue 2.png" alt="" width="1000px">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://instagram.com/mixue_enggal_lampung?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">Mixue Enggal</h5>
+                            <span>Sponsor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="lomba/img/(kock) Logo Mah Put.png" alt="">
                             <div class="team-social text-center">
                                 <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
@@ -448,69 +491,32 @@ require "function.php";
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
-                            <h5 class="mt-2">Full Name</h5>
+                            <h5 class="mt-2">Mah Put Shuttlecock</h5>
+                            <span>Sponsor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="lomba/img/Emina.png" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.eminacosmetics.com/?utm_source=search&utm_medium=cpc&utm_campaign=aon&utm_term=owned_branded"><i class="fa fa-globe"></i></a>
+                                <a class="btn btn-square btn-outline-primary border-2 m-1" href="https://www.instagram.com/eminacosmetics/?hl=id"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="mt-2">Emina</h5>
                             <span>Sponsor</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
+
+
     <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-    <!-- <div class="container-xxl py-6">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase mb-2">Warta PRJ</h6>
-                <h1 class="display-6 mb-4">Kesan Pesan</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle mx-auto" src="img/dummy.png" alt="">
-                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Pak Didik</h5>
-                            <span>Kaprodi Ilkom</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle mx-auto" src="img/dummy.png" alt="">
-                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Pak Roniyus Marjunus</h5>
-                            <span>WD 3</span>
-                        </div>
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle mx-auto" src="img/dummy.png" alt="">
-                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-4">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <hr class="w-25 mx-auto">
-                            <h5>Bu Annie Rose</h5>
-                            <span>Kaprodi MI</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Testimonial End -->
 
 
 
