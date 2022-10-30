@@ -80,36 +80,36 @@
                                 <tbody>
                                   <tr>
                                     <td class="text-center align-middle" scope="row" rowspan="3">1</td>
-                                    <td class="text-center align-middle" rowspan="3">SMA Negeri 3 Metro</td>
-                                    <td>Pandhega Niti</td>
+                                    <td class="text-center align-middle" rowspan="3">SMA N 2 BANDAR LAMPUNG</td>
+                                    <td>MUHAMMAD FARHAN NURHAFIZH</td>
                                   </tr>
                                   <tr>
-                                    <td>M. Miftachul Hudda</td>
+                                    <td>MUHAMAD AYRAZHAN</td>
                                   </tr>
                                   <tr>
-                                    <td>Anggun Pramudya W. P</td>
+                                    <td>MUHAMMAD ZAYYAN PUTRA AKBAR</td>
                                   </tr>
                                   <tr>
                                     <td class="text-center align-middle" scope="row" rowspan="3">2</td>
-                                    <td class="text-center align-middle" rowspan="3">SMK 2 Mei Bandar Lampung</td>
-                                    <td>Farhan Arya Pangestu</td>
+                                    <td class="text-center align-middle" rowspan="3">SMK N 7 BANDAR LAMPUNG</td>
+                                    <td>ALVARO RASENDRIYA ANAGATA</td>
                                   </tr>
                                   <tr>
-                                    <td>Andika Pratama</td>
+                                    <td>MUHAMMAD MIZZEL AGGIL</td>
                                   </tr>
                                   <tr>
-                                    <td>Kyla Nisrina</td>
+                                    <td>JANELA SAVIRA NINGSIH</td>
                                   </tr>
                                   <tr>
                                     <td class="text-center align-middle" scope="row" rowspan="3">3</td>
-                                    <td class="text-center align-middle" rowspan="3">MAN Insan Cendikia</td>
-                                    <td>Faqih M Syuhada</td>
+                                    <td class="text-center align-middle" rowspan="3">SMA N 10 BANDAR LAMPUNG</td>
+                                    <td>MUHAMMAD EMIR PASHA</td>
                                   </tr>
                                   <tr>
-                                    <td>M. Hafidzh Nawwaf M</td>
+                                    <td>ARASHY SALSHABILA JAYA NURIGA</td>
                                   </tr>
                                   <tr>
-                                    <td>M. Daffa Arrafi</td>
+                                    <td>FERDIAN WIRATAMA ASWINTARA</td>
                                   </tr>
                                 </tbody>
                                 </table>
