@@ -70,7 +70,7 @@ require "function.php";
                         <a href="lomba/badminton.php" class="dropdown-item">Badminton</a>
                     </div>
                 </div>
-                <a href="404.php" class="nav-item nav-link">Pengumuman Lomba</a>
+                <a href="pengumuman" class="nav-item nav-link">Pengumuman Lomba</a>
                 <?php
                 if (isset($_SESSION["login"]) && $_SESSION["login"]) {
                 ?>
