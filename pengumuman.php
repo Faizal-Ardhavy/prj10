@@ -115,40 +115,6 @@
                                 </table>
                         </div>
                     </div>
-                    <!-- CPC -->
-                    <div class="card mb-3">
-                        <div class="card-header">
-                          <h3>CPC</h3>
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-hover">
-                                <thead>
-                                  <tr class="bg-warning">
-                                    <th scope="col">Juara</th>
-                                    <th scope="col">Nama</th>
-                                    <th scope="col">Sekolah</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">1</th>
-                                    <td>M. Arvin Wijayanto</td>
-                                    <td>MAN Insan Cendikia</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">2</th>
-                                    <td>Dafa Farhan Haqiqi</td>
-                                    <td>SMAN 3 Metro</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">3</th>
-                                    <td>M. Fadhil Hawari</td>
-                                    <td class="text-justify">SMA IT Baitul Muslim</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                        </div>
-                    </div>
                     <!-- Mobile Legend -->
                     <div class="card mb-3">
                         <div class="card-header">
@@ -297,17 +263,17 @@
                                 <tbody>
                                   <tr>
                                     <th scope="row">1</th>
-                                    <td>Derbi Tri Julian</td>
+                                    <td>Belinda nabila</td>
                                     <!-- <td>Universitas Pertamina</td> -->
                                   </tr>
                                   <tr>
                                     <th scope="row">2</th>
-                                    <td>Laurensius Abimanyu Dwi Kurniawan Siwi</td>
+                                    <td>Muhammad Firman Taqwa</td>
                                     <!-- <td>Univeristas Lampung</td> -->
                                   </tr>
                                   <tr>
                                     <th scope="row">Juara Favorit</th>
-                                    <td>Mahono</td>
+                                    <td>Annisa Arriyanti</td>
                                     <!-- <td class="text-justify">Politeknik Imigrasi</td> -->
                                   </tr>
                                 </tbody>
