@@ -377,11 +377,7 @@ require "function.php";
     </div>
     <!-- Courses End -->
 
-
-
-
-
-    <!-- Team Start -->
+    <!-- Sponsor Start -->
     <div class="container-xxl py-6">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
@@ -516,9 +512,29 @@ require "function.php";
     </div>
 
 
-    <!-- Team End -->
+    <!-- Sponsor End -->
+
+    <!-- Media Partner Start -->
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h6 class="text-primary text-uppercase mb-2">Media Partner Kami</h6>
+                <h1 class="display-6 mb-4">PRJ X HT Berkerjasama dengan:</h1>
+            </div>
+            <div class="row g-0 team-items mb-3">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item ">
+                        <div class="">
+                            <img class = "img-fluid" src="lomba/img/medpart.png" alt="" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <!-- Media Partner End -->
 
 
 
